@@ -62,6 +62,7 @@ fs.readdir('./', async (err, data)=>{
           const dataFromFile = await readFile(fileName, {encoding: "utf8"})
           allData = [...allData, ...JSON.parse(dataFromFile)]
         }))
+        data.sort((a, b)=>a.rtt_ms-b.rtt_ms)
         //delete all intermediate <rtt>.json files
         await Promise.all(jsonFileNames.map(async (fileName) => {
           await unlink(fileName);
