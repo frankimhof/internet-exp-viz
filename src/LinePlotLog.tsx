@@ -12,7 +12,9 @@ type KexSigData = {
 type DataPoint = {
   fileSize_kb: number,
   median_ms: number,
-  percent95_ms: number
+  percent95_ms: number,
+  mean_ms: number,
+  pop_variance_ms: number,
 }
 
 type TickType = {
@@ -146,8 +148,15 @@ const CustomLine = ({dataObject, color, strokeWidth, dashStyle, xScale, yScale, 
       <text y={lineIndex*20} x={80} fill={color}>{dataObject.kexName} {dataObject.rtt_ms}ms</text>
       <path d={lineString} strokeWidth={strokeWidth} strokeDasharray={dashStyle} fill={"none"} stroke={color}/>
       {
-        //@ts-ignore 
-        dataObject.data.map((dataPoint, dataPointIndex)=>drawPoint(xScale(xAccessor(dataPoint)), yScale(yAccessor(dataPoint))))
+        dataObject.data.map((dataPoint)=>drawPoint(xScale(xAccessor(dataPoint)), yScale(yAccessor(dataPoint))))
+      }
+      {
+        dataObject.data.map((dataPoint)=>(
+          <>
+            <circle r={4} strokeWidth={1} stroke={"#f00"} cx={xScale(dataPoint.fileSize_kb)} cy={yScale(dataPoint.mean_ms)}></circle>
+            <line x1={xScale(dataPoint.fileSize_kb)} x2={xScale(dataPoint.fileSize_kb)} y1={yScale(dataPoint.mean_ms+0.5*Math.sqrt(dataPoint.pop_variance_ms))} y2={yScale(dataPoint.mean_ms-0.5*Math.sqrt(dataPoint.pop_variance_ms))} fill={"none"} stroke={"#f00"} strokeWidth={1}/>
+          </>
+        ))
       }
     </>
   )

@@ -18,7 +18,9 @@ type KexSigData = {
 type DataPoint = {
   fileSizes_kb: number,
   median_ms: number,
-  percent95_ms: number
+  percent95_ms: number,
+  mean_ms: number,
+  pop_variance_ms: number,
 }
 
 function App() {
@@ -87,7 +89,7 @@ const InternetExperimentPlots = () =>{
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.median_ms}
-          yDomain={[0, 5000]}
+          yDomain={[0, 4000]}
         />
         <LinePlotLog data={allData.filter(d=>chosen.includes(d.kexName) && chosenRTT.includes(d.rtt_ms))}
           title="95th percentile"
@@ -95,7 +97,7 @@ const InternetExperimentPlots = () =>{
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.percent95_ms}
-          yDomain={[0, 5000]}
+          yDomain={[0, 4000]}
         />
         </div>
         :

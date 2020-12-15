@@ -62,7 +62,7 @@ fs.readdir('./', async (err, data)=>{
           const dataFromFile = await readFile(fileName, {encoding: "utf8"})
           allData = [...allData, ...JSON.parse(dataFromFile)]
         }))
-        data.sort((a, b)=>a.rtt_ms-b.rtt_ms)
+        allData.sort((a, b)=>a.rtt_ms-b.rtt_ms)
         //delete all intermediate <rtt>.json files
         await Promise.all(jsonFileNames.map(async (fileName) => {
           await unlink(fileName);
@@ -94,7 +94,9 @@ const createObjectFromCSVFile = async (pathString, rtt, index) => {
 //        sigName,
           fileSize_kb,
           median_ms: median(values)*1000,
-          percent95_ms: percentile95(values)*1000
+          percent95_ms: percentile95(values)*1000,
+          mean_ms: mean(values)*1000,
+          pop_variance_ms: pop_variance(values, mean(values))*1000
         }
       })
   //return reducedData;
@@ -108,8 +110,9 @@ const createObjectFromCSVFile = async (pathString, rtt, index) => {
 }
 
 const median = (arrayOfNumbers) => {
-  const sum = arrayOfNumbers.reduce((p, c)=>p+c, 0)
-  return sum/arrayOfNumbers.length;
+  const ordinalRank = Math.ceil(0.5*arrayOfNumbers.length);
+  const sorted = arrayOfNumbers.sort((a, b)=>a-b, 0)
+  return sorted[ordinalRank]
 };
 
 const percentile95 = (arrayOfNumbers) => {
@@ -118,4 +121,11 @@ const percentile95 = (arrayOfNumbers) => {
   return sorted[ordinalRank]
 }
 
+const mean = (arrayOfNumbers) => {
+  return arrayOfNumbers.reduce((accum, current)=>accum+current, 0)/arrayOfNumbers.length
+}
+
+const pop_variance = (arrayOfNumbers, mean) => {
+  return arrayOfNumbers.reduce((accum, current)=>accum+Math.pow(current-mean, 2), 0)/arrayOfNumbers.length
+}
 //createObjectFromCSVFile('./kyber512_5p560ms.csv');
