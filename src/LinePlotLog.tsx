@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import * as d3 from 'd3';
 
 type KexSigData = {
@@ -27,6 +27,7 @@ type Props = {
   data: KexSigData[],
   xAccessor: (d:DataPoint)=>number,
   yAccessor: (d:DataPoint)=>number,
+  yDomain: [number, number]
 }
 
 //xDomain: number[],
@@ -44,10 +45,10 @@ const colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6102", "#FFB000"];
 const dashes = ["1", "2 6 2", "2 2 4 2 2", "6 6 6 6", "5 1 5 1", "2", "7"];
 
 
-const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor}) =>{
+const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain}) =>{
   const xScale:d3.ScaleLogarithmic<number, number> = d3.scaleLog().domain([1, 1000]) //packetLoss goes from 0 to 20
     .range([0, boundedWidth])
-  const yScale:d3.ScaleLinear<number, number> = d3.scaleLinear().domain([0, 500])
+  const yScale:d3.ScaleLinear<number, number> = d3.scaleLinear().domain(yDomain)
     .range([boundedHeight, 0])
     .nice()
 
@@ -66,7 +67,7 @@ const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, y
   return(
     <div className="plot">
       <svg style={{backgroundColor: "#000", borderRadius: "5px"}} width={width} height={height}>
-        <text x={boundedWidth*0.5+marginLeft} y={0.5*marginTop} fill="white" fontSize={20} textAnchor={"middle"}>{title}</text>
+        <text x={boundedWidth*0.5+marginLeft} y={0.5*marginTop} fill="white" fontSize={20} textAnchor={"middle"}>{`${title}, RTT = ${data[0].rtt_ms} ms`}</text>
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Labels yLabel={yLabel} xLabel={xLabel}/>
           <Axes xTicks={xTicks as TickType[]} yTicks={yTicks as TickType[]}/>

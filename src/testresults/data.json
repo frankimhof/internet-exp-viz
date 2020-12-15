@@ -1,0 +1,1094 @@
+[
+    {
+        "index": 0,
+        "rtt_ms": 184.233,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 571.3423376205785,
+                "percent95_ms": 575.6360000000001
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.8738978723404,
+                "percent95_ms": 766.5509999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1325.1927500000004,
+                "percent95_ms": 1338.7469999999998
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2215.9207530864196,
+                "percent95_ms": 2237.8520000000003
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 184.233,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 572.7605144694531,
+                "percent95_ms": 577.704
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 761.9274658119655,
+                "percent95_ms": 767.241
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1323.598382352942,
+                "percent95_ms": 1335.5900000000001
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2216.0065061728387,
+                "percent95_ms": 2231.8940000000002
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 184.233,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 596.9903724832217,
+                "percent95_ms": 578.2819999999999
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 760.5323787234042,
+                "percent95_ms": 766.832
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1337.3286119402978,
+                "percent95_ms": 1348.5739999999998
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2234.042567901235,
+                "percent95_ms": 2252.571
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 184.233,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 570.2396538461537,
+                "percent95_ms": 574.8950000000001
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.3151191489361,
+                "percent95_ms": 765.246
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.507785185185,
+                "percent95_ms": 1344.238
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2231.1071604938293,
+                "percent95_ms": 2248.703
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 184.233,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 575.5375404530737,
+                "percent95_ms": 580.838
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 764.5893803418808,
+                "percent95_ms": 771.3389999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1345.5074626865676,
+                "percent95_ms": 1352.23
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2235.7665432098765,
+                "percent95_ms": 2251.592
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 184.233,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 579.7337394136807,
+                "percent95_ms": 585.052
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 768.3696163793102,
+                "percent95_ms": 775.277
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1335.0050074074068,
+                "percent95_ms": 1347.2949999999998
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2230.189320987654,
+                "percent95_ms": 2253.0589999999997
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 184.233,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 582.7792459016396,
+                "percent95_ms": 588.671
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 771.2887931034485,
+                "percent95_ms": 778.694
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1359.76634090909,
+                "percent95_ms": 1350.812
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2225.202938271604,
+                "percent95_ms": 2248.1209999999996
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 184.233,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 792.5325911111108,
+                "percent95_ms": 789.0559999999999
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 784.642815789474,
+                "percent95_ms": 792.714
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1309.0387299270074,
+                "percent95_ms": 1355.059
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2238.133135802469,
+                "percent95_ms": 2233.293
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 184.233,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 571.2047009646305,
+                "percent95_ms": 576.131
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 760.5903063829787,
+                "percent95_ms": 766.9749999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1331.3695703703706,
+                "percent95_ms": 1342.3480000000002
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2305.6771,
+                "percent95_ms": 2242.056
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 184.233,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 571.9335948553052,
+                "percent95_ms": 575.9459999999999
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.8709106382975,
+                "percent95_ms": 766.676
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1378.675476923077,
+                "percent95_ms": 1729.2849999999999
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2271.9087468354423,
+                "percent95_ms": 2820.721
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 184.233,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 636.7817035714279,
+                "percent95_ms": 643.7389999999999
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 825.3254423963135,
+                "percent95_ms": 834.16
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1399.7909765625,
+                "percent95_ms": 1413.5310000000002
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2304.9308974358974,
+                "percent95_ms": 2322.142
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 184.233,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 584.5905377049174,
+                "percent95_ms": 603.596
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 761.4322553191492,
+                "percent95_ms": 767.466
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1343.7399328358213,
+                "percent95_ms": 1351.53
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2249.757175,
+                "percent95_ms": 2286.433
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 184.233,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 570.9346977491964,
+                "percent95_ms": 575.591
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.3956340425539,
+                "percent95_ms": 766.436
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1325.6187205882347,
+                "percent95_ms": 1340.306
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2223.3227407407403,
+                "percent95_ms": 2241.1349999999998
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 184.212,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 567.5525399361024,
+                "percent95_ms": 574.736
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.8877215189874,
+                "percent95_ms": 759.728
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1315.1163065693431,
+                "percent95_ms": 1323.281
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2266.9821624999995,
+                "percent95_ms": 2210.5800000000004
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 184.212,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 567.0789616613417,
+                "percent95_ms": 570.272
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 758.3554638297869,
+                "percent95_ms": 762.289
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1319.1237794117656,
+                "percent95_ms": 1325.821
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2193.1319024390245,
+                "percent95_ms": 2201.5440000000003
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 184.212,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.9754458598723,
+                "percent95_ms": 569.805
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 757.6193050847453,
+                "percent95_ms": 759.513
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1323.18130882353,
+                "percent95_ms": 1335.081
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2280.7952278481002,
+                "percent95_ms": 2533.258
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 184.212,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.2256305732485,
+                "percent95_ms": 569.145
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.2574388185652,
+                "percent95_ms": 757.792
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1323.5582794117652,
+                "percent95_ms": 1334.8960000000002
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2210.6643902439023,
+                "percent95_ms": 2223.7740000000003
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 184.212,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 572.6098838709677,
+                "percent95_ms": 573.863
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 758.0413319148929,
+                "percent95_ms": 764.454
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.6633407407398,
+                "percent95_ms": 1355.839
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2230.8963580246914,
+                "percent95_ms": 2227.96
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 184.212,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 574.035083870968,
+                "percent95_ms": 578.24
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 762.0581923076923,
+                "percent95_ms": 766.919
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1322.0191102941167,
+                "percent95_ms": 1332.141
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2200.017439024391,
+                "percent95_ms": 2214.201
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 184.212,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 577.4422532467529,
+                "percent95_ms": 582.317
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 765.7353347639481,
+                "percent95_ms": 778.501
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1326.9958444444442,
+                "percent95_ms": 1338.866
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2207.3381829268283,
+                "percent95_ms": 2222.8940000000002
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 184.212,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 775.8363869565221,
+                "percent95_ms": 780.648
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 781.8977543859647,
+                "percent95_ms": 788.237
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1298.7157536231884,
+                "percent95_ms": 1339.607
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2197.0056463414635,
+                "percent95_ms": 2204.784
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 184.212,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 566.7664840764329,
+                "percent95_ms": 572.095
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 754.1838945147684,
+                "percent95_ms": 763.688
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1320.4883602941177,
+                "percent95_ms": 1327.642
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.4044878048785,
+                "percent95_ms": 2213.5539999999996
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 184.212,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.5083942307689,
+                "percent95_ms": 570.126
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.5384008438818,
+                "percent95_ms": 757.3870000000001
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1321.0941323529414,
+                "percent95_ms": 1331.74
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2218.0097530864205,
+                "percent95_ms": 2217.214
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 184.212,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 630.8144007092197,
+                "percent95_ms": 637.115
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 818.2158027522938,
+                "percent95_ms": 824.168
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1388.363627906976,
+                "percent95_ms": 1398.82
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2278.265,
+                "percent95_ms": 2291.469
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 184.212,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.7307675159238,
+                "percent95_ms": 567.562
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.248810126582,
+                "percent95_ms": 754.713
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1324.1070735294109,
+                "percent95_ms": 1333.6840000000002
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2266.31485,
+                "percent95_ms": 2255.827
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 184.212,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.8043057324844,
+                "percent95_ms": 571.5120000000001
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.031147679325,
+                "percent95_ms": 759.06
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.567264705882,
+                "percent95_ms": 1327.186
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2292.97170886076,
+                "percent95_ms": 2297.2019999999998
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 185.602,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 573.5869548387097,
+                "percent95_ms": 580.371
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 757.8138638297875,
+                "percent95_ms": 766.426
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1321.6647500000013,
+                "percent95_ms": 1332.6789999999999
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2196.6708658536586,
+                "percent95_ms": 2213.5679999999998
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 185.602,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 577.4652012987017,
+                "percent95_ms": 599.997
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 763.7282350427353,
+                "percent95_ms": 775.7420000000001
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1324.3836397058828,
+                "percent95_ms": 1336.9789999999998
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2396.1801333333324,
+                "percent95_ms": 3597.731
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 185.602,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 583.7410065573765,
+                "percent95_ms": 616.572
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 791.829048888889,
+                "percent95_ms": 838.048
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1411.8011338582673,
+                "percent95_ms": 1689.469
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2502.1508750000003,
+                "percent95_ms": 3474.328
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 185.602,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.7571185897435,
+                "percent95_ms": 581.889
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.6854808510637,
+                "percent95_ms": 776.5020000000001
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1332.2497629629636,
+                "percent95_ms": 1350.7350000000001
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2219.836395061728,
+                "percent95_ms": 2238.642
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 185.602,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 572.4548810289391,
+                "percent95_ms": 577.462
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 774.7733391304349,
+                "percent95_ms": 765.122
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1334.0172888888887,
+                "percent95_ms": 1355.2949999999998
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2229.8772469135793,
+                "percent95_ms": 2269.5370000000003
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 185.602,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 577.3168896103894,
+                "percent95_ms": 586.842
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 763.5243376068375,
+                "percent95_ms": 771.1329999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1337.64721641791,
+                "percent95_ms": 1417.54
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2216.2502839506174,
+                "percent95_ms": 2228.325
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 185.602,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 579.232188925081,
+                "percent95_ms": 584.151
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 766.3469699570818,
+                "percent95_ms": 771.3729999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.5042592592592,
+                "percent95_ms": 1338.426
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2301.805025641026,
+                "percent95_ms": 2396.4379999999996
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 185.602,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 795.1588799999997,
+                "percent95_ms": 839.452
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 801.9060672645744,
+                "percent95_ms": 838.8910000000001
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1313.1442043795626,
+                "percent95_ms": 1397.056
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2222.106864197531,
+                "percent95_ms": 2276.621
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 185.602,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 579.4441237785014,
+                "percent95_ms": 608.155
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 780.906209606987,
+                "percent95_ms": 829.021
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1405.2396718749997,
+                "percent95_ms": 1587.1580000000001
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2506.8286944444435,
+                "percent95_ms": 4740.643999999999
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 185.602,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 601.504094594595,
+                "percent95_ms": 638.421
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 775.5708434782609,
+                "percent95_ms": 802.275
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1427.8682619047622,
+                "percent95_ms": 1676.08
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2462.126301369863,
+                "percent95_ms": 3239.528
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 185.602,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 772.6048008658003,
+                "percent95_ms": 893.058
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 890.6946666666663,
+                "percent95_ms": 990.786
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1451.8379435483876,
+                "percent95_ms": 1586.123
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2391.1820131578947,
+                "percent95_ms": 2931.741
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 185.602,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 571.3161318327976,
+                "percent95_ms": 584.707
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 775.278026086956,
+                "percent95_ms": 827.8729999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1384.5605615384604,
+                "percent95_ms": 1529.1570000000002
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2504.624583333333,
+                "percent95_ms": 4013.34
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 185.602,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 573.3396322580644,
+                "percent95_ms": 603.216
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 761.4479700854705,
+                "percent95_ms": 769.4879999999999
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1323.0487426470586,
+                "percent95_ms": 1346.286
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2200.3828292682924,
+                "percent95_ms": 2223.026
+            }
+        ]
+    }
+]

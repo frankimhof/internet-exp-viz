@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import './App.css';
 
 import near from './testresults/near.json';
-//import medium from './testresults/near.json';
+import worstcase from './testresults/worstcase.json';
 //import far from './testresults/near.json';
 //import worstcase from './testresults/near.json';
 import LinePlotLog from './LinePlotLog';
 //const internetExpTestresults = [near, medium, far, worstcase];
-const internetExpTestresults = [near];
+const internetExpTestresults = [near, worstcase];
 
 type KexSigData = {
   index: number,
@@ -55,18 +55,38 @@ const InternetExperimentPlots = () =>{
       </div>
       <div style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly", flexWrap: "wrap"}}>
         <LinePlotLog data={internetExpTestresults[0].filter(d=>chosen.includes(d.kexName))}
-          title="Median, near"
+          title="Median"
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.median_ms}
+          yDomain={[0, 500]}
         />
         <LinePlotLog data={internetExpTestresults[0].filter(d=>chosen.includes(d.kexName))}
-          title="95th percentile, near"
+          title="95th percentile"
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.percent95_ms}
+          yDomain={[0, 500]}
+        />
+      </div>
+      <div style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly", flexWrap: "wrap"}}>
+        <LinePlotLog data={internetExpTestresults[1].filter(d=>chosen.includes(d.kexName))}
+          title="Median"
+          yLabel="Web page retrieval time (ms)"
+          xLabel="Web page size (kB, log scale)"
+          xAccessor={(d)=>d.fileSize_kb}
+          yAccessor={(d)=>d.median_ms}
+          yDomain={[0, 2500]}
+        />
+        <LinePlotLog data={internetExpTestresults[1].filter(d=>chosen.includes(d.kexName))}
+          title="95th percentile"
+          yLabel="Web page retrieval time (ms)"
+          xLabel="Web page size (kB, log scale)"
+          xAccessor={(d)=>d.fileSize_kb}
+          yAccessor={(d)=>d.percent95_ms}
+          yDomain={[0, 2500]}
         />
       </div>
     </>
