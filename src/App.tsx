@@ -1,27 +1,14 @@
 import React, {useState} from 'react';
 import './App.css';
 
-import allData from './testresults/data.json';
+import dataJSON from './testresults/data.json';
 //import far from './testresults/near.json';
 //import worstcase from './testresults/near.json';
 import LinePlotLog from './LinePlotLog';
 //const internetExpTestresults = [near, medium, far, worstcase];
+import {KexSigData} from './customtypes';
 
-type KexSigData = {
-  index: number,
-  rtt_ms: number,
-  kexName: string,
-  sigName: string,
-  data: DataPoint[]
-}
-
-type DataPoint = {
-  fileSizes_kb: number,
-  median_ms: number,
-  percent95_ms: number,
-  mean_ms: number,
-  pop_variance_ms: number,
-}
+const allData:KexSigData[] = dataJSON.map((d:any)=>d as KexSigData);
 
 function App() {
   return (
@@ -35,31 +22,45 @@ function App() {
 }
 
 const InternetExperimentPlots = () =>{
-  //@ts-ignore
+  //used for buttons
   const foundRTTs = Array.from(new Set(allData.map((d:KexSigData)=>d.rtt_ms).sort((a,b)=>a-b)));
-  //@ts-ignore
+  const foundSIGs = Array.from(new Set(allData.map((d:KexSigData)=>d.sigName).sort()));
   const foundKEMs = Array.from(new Set(allData.map((d:KexSigData)=>d.kexName).sort()));
-  //@ts-ignore
-  //const foundSIGs = Array.from(new Set(allData.map((d:KexSigData)=>d.sigName).sort()));
 
-  const [chosen, setChosen] = useState<String[]>(["prime256v1"])
   const [chosenRTT, setChosenRTT] = useState<Number[]>([foundRTTs[0]])
+  const [chosenSIG, setChosenSIG] = useState<String[]>(["ecdsap256"])
+  const [chosenKEM, setChosenKEM] = useState<String[]>(["prime256v1"])
 
+  const filteredData = allData.filter((d:KexSigData)=>chosenRTT.includes(d.rtt_ms) && chosenSIG.includes(d.sigName) && chosenKEM.includes(d.kexName))
+  //used for greying out unavailable combinations
+  const availableRTTs = Array.from(new Set(allData.filter((d:KexSigData)=>chosenSIG.includes(d.sigName) && chosenKEM.includes(d.kexName)).map((d:KexSigData)=>d.rtt_ms).sort()));
+  const availableSIGs = Array.from(new Set(allData.filter((d:KexSigData)=>chosenRTT.includes(d.rtt_ms) && chosenKEM.includes(d.kexName)).map((d:KexSigData)=>d.sigName).sort()));
+  const availableKEMs = Array.from(new Set(allData.filter((d:KexSigData)=> chosenRTT.includes(d.rtt_ms) && chosenSIG.includes(d.sigName)).map((d:KexSigData)=>d.kexName).sort()));
 
-  const toggle = (k:string) =>{
-    if(chosen.includes(k)){
-      setChosen(chosen.filter(d=>d!==k))
-    }
-    else{
-      setChosen([...chosen, k])
-    }
-  }
   const toggleRTT = (k:number) =>{
     if(chosenRTT.includes(k)){
       setChosenRTT(chosenRTT.filter(d=>d!==k))
     }
     else{
       setChosenRTT([...chosenRTT, k])
+    }
+  }
+
+  const toggleKEM = (k:string) =>{
+    if(chosenKEM.includes(k)){
+      setChosenKEM(chosenKEM.filter(d=>d!==k))
+    }
+    else{
+      setChosenKEM([...chosenKEM, k])
+    }
+  }
+
+  const toggleSIG = (k:string) =>{
+    if(chosenSIG.includes(k)){
+      setChosenSIG(chosenSIG.filter(d=>d!==k))
+    }
+    else{
+      setChosenSIG([...chosenSIG, k])
     }
   }
 
@@ -70,7 +71,15 @@ const InternetExperimentPlots = () =>{
         {
         // Create Buttons for filtering data by RTT 
         //@ts-ignore 
-          foundRTTs.map((rtt:number)=>(<div className={chosenRTT.includes(rtt)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleRTT(parseFloat(e.target.innerHTML))}}>{rtt}ms</div>))
+          foundRTTs.map((rtt:number)=>(availableRTTs.includes(rtt)? <div className={chosenRTT.includes(rtt)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleRTT(parseFloat(e.target.innerHTML))}}>{rtt}ms</div> : <div className={"button-greyed-out"}>{rtt}</div>))
+        }
+      </div>
+      <h2>SIG</h2>
+      <div className={"button-panel"}>
+        {
+        // Create Buttons for filtering data by Kex Name
+        //@ts-ignore 
+          foundSIGs.map((sigName:string)=>(availableSIGs.includes(sigName)? <div className={chosenSIG.includes(sigName)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleSIG(e.target.innerHTML)}}>{sigName}</div> : <div className={"button-greyed-out"}>{sigName}</div>))
         }
       </div>
       <h2>KEM</h2>
@@ -78,12 +87,11 @@ const InternetExperimentPlots = () =>{
         {
         // Create Buttons for filtering data by Kex Name
         //@ts-ignore 
-          foundKEMs.map((kemName:string)=>(<div className={chosen.includes(kemName)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggle(e.target.innerHTML)}}>{kemName}</div>))
+          foundKEMs.map((kemName:string)=>(availableKEMs.includes(kemName)? <div className={chosenKEM.includes(kemName)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleKEM(e.target.innerHTML)}}>{kemName}</div> : <div className={"button-greyed-out"}>{kemName}</div>))
         }
       </div>
-      { chosenRTT.length > 0 && chosen.length > 0 ?
       <div style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly", flexWrap: "wrap"}}>
-        <LinePlotLog data={allData.filter(d=>chosen.includes(d.kexName) && chosenRTT.includes(d.rtt_ms))}
+        <LinePlotLog data={filteredData}
           title="Median"
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
@@ -91,7 +99,7 @@ const InternetExperimentPlots = () =>{
           yAccessor={(d)=>d.median_ms}
           yDomain={[0, 4000]}
         />
-        <LinePlotLog data={allData.filter(d=>chosen.includes(d.kexName) && chosenRTT.includes(d.rtt_ms))}
+        <LinePlotLog data={filteredData}
           title="95th percentile"
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
@@ -102,7 +110,6 @@ const InternetExperimentPlots = () =>{
         </div>
         :
         <div className={"hint"}>To enable visualization, chose both RTT and KEM</div>
-      }
     </>
   )
 }
