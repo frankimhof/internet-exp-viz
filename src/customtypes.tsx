@@ -6,6 +6,13 @@ type KexSigData = {
   data: DataPoint[]
 }
 
+type KexSigDataMean = {
+  index: number,
+  rtt_ms: number,
+  kexName: string,
+  sigName: string,
+  data: MeanDataPoint[]
+}
 
 type DataPoint = {
   fileSize_kb: number,
@@ -15,4 +22,12 @@ type DataPoint = {
   pop_variance_ms: number,
 }
 
-export type {KexSigData, DataPoint}
+type MeanDataPoint = {
+  fileSize_kb: number,
+  meanOfMedian_ms: number,
+  meanOfPercent95_ms: number,
+  sampleStdDevOfMedian: number,
+  sampleStdDevOfPercent95: number,
+}
+
+export type {MeanDataPoint, KexSigData, KexSigDataMean, DataPoint}

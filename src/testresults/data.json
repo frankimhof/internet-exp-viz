@@ -1,6 +1,366 @@
 [
     {
         "index": 0,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 731.6329999999999,
+                "percent95_ms": 737.7479999999999,
+                "mean_ms": 745.1092426778246,
+                "pop_variance_ms": 10.972926663372071
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 909.227,
+                "percent95_ms": 916.5459999999999,
+                "mean_ms": 911.1156071428567,
+                "pop_variance_ms": 0.3498914064323981
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1290.434,
+                "percent95_ms": 1466.3729999999998,
+                "mean_ms": 1312.6005036496354,
+                "pop_variance_ms": 10.312689697155097
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2198.667,
+                "percent95_ms": 6074.84,
+                "mean_ms": 2495.1924027777777,
+                "pop_variance_ms": 878.197614252685
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 549.755,
+                "percent95_ms": 557.28,
+                "mean_ms": 556.0656249999998,
+                "pop_variance_ms": 2.732358000378125
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 728.9989999999999,
+                "percent95_ms": 734.911,
+                "mean_ms": 740.8966182572608,
+                "pop_variance_ms": 7.4975040276468015
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1265.059,
+                "percent95_ms": 1311.779,
+                "mean_ms": 1281.9420357142862,
+                "pop_variance_ms": 11.378279939563011
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2150.524,
+                "percent95_ms": 3629.556,
+                "mean_ms": 2403.542186666667,
+                "pop_variance_ms": 1443.3448648810588
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 721.073,
+                "percent95_ms": 727.445,
+                "mean_ms": 728.8820040816329,
+                "pop_variance_ms": 5.750133802004065
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 897.462,
+                "percent95_ms": 903.301,
+                "mean_ms": 898.7698341708541,
+                "pop_variance_ms": 0.19054620474134476
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1275.615,
+                "percent95_ms": 2541.9649999999997,
+                "mean_ms": 1421.0604523809532,
+                "pop_variance_ms": 197.1884616466287
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2254.479,
+                "percent95_ms": 7321.207,
+                "mean_ms": 2748.9464393939397,
+                "pop_variance_ms": 2038.6473528223373
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 721.985,
+                "percent95_ms": 727.467,
+                "mean_ms": 737.9959297520658,
+                "pop_variance_ms": 14.839123823693411
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 728.1419999999999,
+                "percent95_ms": 736.349,
+                "mean_ms": 783.0588201754385,
+                "pop_variance_ms": 257.71873318048955
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1269.935,
+                "percent95_ms": 1289.138,
+                "mean_ms": 1300.0930507246383,
+                "pop_variance_ms": 36.266361947961194
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2159.877,
+                "percent95_ms": 2448.187,
+                "mean_ms": 2267.8811250000003,
+                "pop_variance_ms": 272.3934805181343
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1471.8500000000001,
+                "percent95_ms": 1830.793,
+                "mean_ms": 1539.0164358974364,
+                "pop_variance_ms": 157.22522900333988
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1477.531,
+                "percent95_ms": 1694.336,
+                "mean_ms": 1511.657411764706,
+                "pop_variance_ms": 14.36246965580524
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1536.998,
+                "percent95_ms": 2373.897,
+                "mean_ms": 1606.4505892857144,
+                "pop_variance_ms": 94.92623542354562
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2417.6220000000003,
+                "percent95_ms": 2735.2110000000002,
+                "mean_ms": 2552.3053098591554,
+                "pop_variance_ms": 477.326648404242
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 2978.676,
+                "percent95_ms": 3225.684,
+                "mean_ms": 3012.1391666666664,
+                "pop_variance_ms": 8.117567070138886
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3304.831,
+                "percent95_ms": 4585.339,
+                "mean_ms": 3353.1345,
+                "pop_variance_ms": 255.05567412017598
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3687.725,
+                "percent95_ms": 3845.709,
+                "mean_ms": 3676.9426530612254,
+                "pop_variance_ms": 971.3687969154922
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4690.639,
+                "percent95_ms": 8307.674,
+                "mean_ms": 4701.22535897436,
+                "pop_variance_ms": 536.0982404833584
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 721.3009999999999,
+                "percent95_ms": 766.125,
+                "mean_ms": 738.2737685950414,
+                "pop_variance_ms": 11.123845701632401
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 898.3480000000001,
+                "percent95_ms": 907.036,
+                "mean_ms": 904.2163282828285,
+                "pop_variance_ms": 5.1092628010184935
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1277.1129999999998,
+                "percent95_ms": 1455.878,
+                "mean_ms": 1333.2172814814812,
+                "pop_variance_ms": 84.47988507358004
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2279.369,
+                "percent95_ms": 7978.516,
+                "mean_ms": 2719.9153030303023,
+                "pop_variance_ms": 2905.300396717787
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 721.543,
+                "percent95_ms": 728.0269999999999,
+                "mean_ms": 723.327360323886,
+                "pop_variance_ms": 0.26740190533170516
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 727.687,
+                "percent95_ms": 733.9,
+                "mean_ms": 733.8103045267492,
+                "pop_variance_ms": 2.726777701257057
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1271.637,
+                "percent95_ms": 1999.2700000000002,
+                "mean_ms": 1332.59802962963,
+                "pop_variance_ms": 63.382997753539854
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2162.9,
+                "percent95_ms": 7772.687999999999,
+                "mean_ms": 2519.833861111111,
+                "pop_variance_ms": 1528.2107074034807
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 722.205,
+                "percent95_ms": 730.46,
+                "mean_ms": 731.9917213114752,
+                "pop_variance_ms": 5.489599881012495
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 728.718,
+                "percent95_ms": 736.03,
+                "mean_ms": 733.8318024691358,
+                "pop_variance_ms": 1.5423488523807345
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1265.3229999999999,
+                "percent95_ms": 1314.325,
+                "mean_ms": 1301.6719782608693,
+                "pop_variance_ms": 76.56601055757199
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2152.464,
+                "percent95_ms": 5362.415999999999,
+                "mean_ms": 2493.483777777777,
+                "pop_variance_ms": 1667.1068351511176
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 175.809,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 542.338,
+                "percent95_ms": 550.55,
+                "mean_ms": 544.3978067484662,
+                "pop_variance_ms": 0.12850702884302193
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 724.0609999999999,
+                "percent95_ms": 734.026,
+                "mean_ms": 728.8443346938777,
+                "pop_variance_ms": 0.9855605572838984
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1279.865,
+                "percent95_ms": 1796.046,
+                "mean_ms": 1332.1194296296298,
+                "pop_variance_ms": 61.25669996911912
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2273.457,
+                "percent95_ms": 4808.172,
+                "mean_ms": 2593.858557142857,
+                "pop_variance_ms": 1697.002946625904
+            }
+        ]
+    },
+    {
+        "index": 0,
         "rtt_ms": 180.934,
         "kexName": "firesaber",
         "sigName": "ecdsap256",
@@ -464,6 +824,1446 @@
                 "percent95_ms": 2330.4629999999997,
                 "mean_ms": 2240.696382716048,
                 "pop_variance_ms": 35.61478845426094
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 744.514,
+                "percent95_ms": 747.629,
+                "mean_ms": 744.5248458333331,
+                "pop_variance_ms": 0.00358326631373266
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 927.614,
+                "percent95_ms": 931.663,
+                "mean_ms": 927.6771813471503,
+                "pop_variance_ms": 0.005695246345351545
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1314.98,
+                "percent95_ms": 1322.2849999999999,
+                "mean_ms": 1315.2111167883209,
+                "pop_variance_ms": 0.013842990000959043
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2202.601,
+                "percent95_ms": 2212.4049999999997,
+                "mean_ms": 2202.7215853658527,
+                "pop_variance_ms": 0.03235190460856627
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 744.91,
+                "percent95_ms": 748.401,
+                "mean_ms": 745.1687280334729,
+                "pop_variance_ms": 0.009343594231473526
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.043,
+                "percent95_ms": 754.0559999999999,
+                "mean_ms": 750.9867184873948,
+                "pop_variance_ms": 0.003235894403943923
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.441,
+                "percent95_ms": 1318.843,
+                "mean_ms": 1312.381832116788,
+                "pop_variance_ms": 0.08750561215429707
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2188.266,
+                "percent95_ms": 2199.804,
+                "mean_ms": 2190.5904999999993,
+                "pop_variance_ms": 1.094789618493901
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.324,
+                "percent95_ms": 749.51,
+                "mean_ms": 750.0006974789916,
+                "pop_variance_ms": 3.0140399628160437
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.331,
+                "percent95_ms": 757.057,
+                "mean_ms": 753.0022869198311,
+                "pop_variance_ms": 0.025599032677170674
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1305.347,
+                "percent95_ms": 1310.65,
+                "mean_ms": 1305.3669782608702,
+                "pop_variance_ms": 0.008350646282136078
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2175.8419999999996,
+                "percent95_ms": 2183.083,
+                "mean_ms": 2174.3091445783143,
+                "pop_variance_ms": 0.05233069443692835
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 560.8610000000001,
+                "percent95_ms": 563.874,
+                "mean_ms": 560.8349936908517,
+                "pop_variance_ms": 0.004015279085133696
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 746.911,
+                "percent95_ms": 751.126,
+                "mean_ms": 747.0530209205024,
+                "pop_variance_ms": 0.005283847342658553
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1315.126,
+                "percent95_ms": 1323.806,
+                "mean_ms": 1315.8564411764708,
+                "pop_variance_ms": 0.016042908217128095
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2206.288,
+                "percent95_ms": 2237.1620000000003,
+                "mean_ms": 2213.9006585365855,
+                "pop_variance_ms": 0.5345478767126725
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 756.9789999999999,
+                "percent95_ms": 761.167,
+                "mean_ms": 756.9761398305088,
+                "pop_variance_ms": 0.0059715401287525095
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 941.72,
+                "percent95_ms": 946.653,
+                "mean_ms": 942.7183473684207,
+                "pop_variance_ms": 0.18588449888986144
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.1589999999999,
+                "percent95_ms": 1341.654,
+                "mean_ms": 1344.9557388059711,
+                "pop_variance_ms": 15.827650882969092
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2233.209,
+                "percent95_ms": 2336.6189999999997,
+                "mean_ms": 2258.2418500000003,
+                "pop_variance_ms": 25.210244588327498
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 567.982,
+                "percent95_ms": 572.247,
+                "mean_ms": 568.254849840255,
+                "pop_variance_ms": 0.013779628549337073
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.325,
+                "percent95_ms": 756.86,
+                "mean_ms": 758.2432085106383,
+                "pop_variance_ms": 4.464905422190565
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1307.826,
+                "percent95_ms": 1315.0720000000001,
+                "mean_ms": 1308.0615109489047,
+                "pop_variance_ms": 0.019077192702434766
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2182.7839999999997,
+                "percent95_ms": 2190.424,
+                "mean_ms": 2181.2568554216864,
+                "pop_variance_ms": 0.04411074930439859
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.228,
+                "percent95_ms": 748.633,
+                "mean_ms": 745.2346987447697,
+                "pop_variance_ms": 0.003717247097529801
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 928.53,
+                "percent95_ms": 932.5250000000001,
+                "mean_ms": 928.6271658031095,
+                "pop_variance_ms": 0.005513701982872021
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.7340000000002,
+                "percent95_ms": 1323.719,
+                "mean_ms": 1333.650518518518,
+                "pop_variance_ms": 17.048811977286697
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2203.0919999999996,
+                "percent95_ms": 3392.536,
+                "mean_ms": 2435.386445945945,
+                "pop_variance_ms": 1559.4881475692473
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.8320000000001,
+                "percent95_ms": 749.124,
+                "mean_ms": 749.0571596638657,
+                "pop_variance_ms": 2.455821486352659
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.754,
+                "percent95_ms": 755.459,
+                "mean_ms": 751.8357426160337,
+                "pop_variance_ms": 0.004004600714344198
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1310.9189999999999,
+                "percent95_ms": 1316.047,
+                "mean_ms": 1311.1786131386862,
+                "pop_variance_ms": 0.007743612879535419
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2187.072,
+                "percent95_ms": 2251.215,
+                "mean_ms": 2194.7568048780486,
+                "pop_variance_ms": 2.7285356341570486
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1520.516,
+                "percent95_ms": 1529.412,
+                "mean_ms": 1527.2447542372884,
+                "pop_variance_ms": 2.7837672349819718
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1526.349,
+                "percent95_ms": 1536.462,
+                "mean_ms": 1534.4040427350424,
+                "pop_variance_ms": 2.4840950702631313
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1582.33,
+                "percent95_ms": 1590.0339999999999,
+                "mean_ms": 1588.225495575221,
+                "pop_variance_ms": 2.210310704798652
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2452.533,
+                "percent95_ms": 2497.366,
+                "mean_ms": 2483.335273972603,
+                "pop_variance_ms": 55.730614024253704
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 182.008,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 2999.768,
+                "percent95_ms": 3010.3849999999998,
+                "mean_ms": 2997.0388833333336,
+                "pop_variance_ms": 0.4567279064030557
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3341.417,
+                "percent95_ms": 3376.782,
+                "mean_ms": 3199.360122807019,
+                "pop_variance_ms": 29.710200602002466
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3744.698,
+                "percent95_ms": 4523.751,
+                "mean_ms": 3606.2387000000003,
+                "pop_variance_ms": 837.0856638671302
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4771.246,
+                "percent95_ms": 4796.996,
+                "mean_ms": 4604.766300000001,
+                "pop_variance_ms": 144.15271482011002
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 744.73,
+                "percent95_ms": 748.187,
+                "mean_ms": 744.7749791666662,
+                "pop_variance_ms": 0.0050431834870659584
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 927.868,
+                "percent95_ms": 931.721,
+                "mean_ms": 927.9810777202076,
+                "pop_variance_ms": 0.004351388879969918
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1315.983,
+                "percent95_ms": 1323.051,
+                "mean_ms": 1316.5280661764707,
+                "pop_variance_ms": 0.027194954150032365
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.678,
+                "percent95_ms": 2356.201,
+                "mean_ms": 2232.7714814814813,
+                "pop_variance_ms": 10.860959540224961
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.208,
+                "percent95_ms": 749.542,
+                "mean_ms": 745.588456066946,
+                "pop_variance_ms": 0.00856326187150085
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.228,
+                "percent95_ms": 754.697,
+                "mean_ms": 751.2805966386555,
+                "pop_variance_ms": 0.004236528316291231
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.6209999999999,
+                "percent95_ms": 1318.25,
+                "mean_ms": 1311.4596350364955,
+                "pop_variance_ms": 0.010910788173371058
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2189.445,
+                "percent95_ms": 2202.44,
+                "mean_ms": 2188.219353658536,
+                "pop_variance_ms": 0.141808865057853
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.4960000000001,
+                "percent95_ms": 750.081,
+                "mean_ms": 746.6111380753141,
+                "pop_variance_ms": 0.003392759734073293
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.709,
+                "percent95_ms": 756.119,
+                "mean_ms": 752.713687763713,
+                "pop_variance_ms": 0.003949195564955783
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1306.891,
+                "percent95_ms": 1312.367,
+                "mean_ms": 1307.01899270073,
+                "pop_variance_ms": 0.0423734729415526
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2175.872,
+                "percent95_ms": 2184.752,
+                "mean_ms": 2175.0224819277105,
+                "pop_variance_ms": 0.062427523743649314
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 560.978,
+                "percent95_ms": 563.8290000000001,
+                "mean_ms": 560.9574037854892,
+                "pop_variance_ms": 0.0032506963101434105
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 747.536,
+                "percent95_ms": 751.1600000000001,
+                "mean_ms": 747.4302761506274,
+                "pop_variance_ms": 0.004271832911188522
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1315.494,
+                "percent95_ms": 1325.591,
+                "mean_ms": 1317.0132279411769,
+                "pop_variance_ms": 0.08137939527892521
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2205.589,
+                "percent95_ms": 2235.6099999999997,
+                "mean_ms": 2208.697853658537,
+                "pop_variance_ms": 0.136635835173706
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 757.2860000000001,
+                "percent95_ms": 761.5889999999999,
+                "mean_ms": 757.5201949152543,
+                "pop_variance_ms": 0.015536553606075835
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 941.616,
+                "percent95_ms": 946.0699999999999,
+                "mean_ms": 944.6457037037034,
+                "pop_variance_ms": 1.6397339677534786
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1332.744,
+                "percent95_ms": 1337.871,
+                "mean_ms": 1332.7086296296297,
+                "pop_variance_ms": 0.010507466781344258
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2231.325,
+                "percent95_ms": 2238.9579999999996,
+                "mean_ms": 2230.4006666666664,
+                "pop_variance_ms": 0.05507667906172813
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 568.528,
+                "percent95_ms": 571.714,
+                "mean_ms": 568.2540319488813,
+                "pop_variance_ms": 0.0055175623951454165
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.63,
+                "percent95_ms": 756.989,
+                "mean_ms": 753.4998691983118,
+                "pop_variance_ms": 0.005956168214958404
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1308.102,
+                "percent95_ms": 1314.797,
+                "mean_ms": 1308.5410729927003,
+                "pop_variance_ms": 0.041990243206350836
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2184.0969999999998,
+                "percent95_ms": 2191.3360000000002,
+                "mean_ms": 2183.319542168675,
+                "pop_variance_ms": 0.19098728109159524
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.777,
+                "percent95_ms": 749.054,
+                "mean_ms": 745.7088577405859,
+                "pop_variance_ms": 0.0037965074190928066
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 928.097,
+                "percent95_ms": 931.888,
+                "mean_ms": 928.1536683937824,
+                "pop_variance_ms": 0.005070409527343007
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.424,
+                "percent95_ms": 1324.3339999999998,
+                "mean_ms": 1316.7976764705875,
+                "pop_variance_ms": 0.02410479438062282
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2202.2599999999998,
+                "percent95_ms": 2215.524,
+                "mean_ms": 2203.6258414634153,
+                "pop_variance_ms": 0.03291289427974426
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.0649999999999,
+                "percent95_ms": 749.457,
+                "mean_ms": 746.2125146443516,
+                "pop_variance_ms": 0.005810174266521941
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.3100000000001,
+                "percent95_ms": 756.2489999999999,
+                "mean_ms": 752.9258185654007,
+                "pop_variance_ms": 0.03998242774345281
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.555,
+                "percent95_ms": 1317.742,
+                "mean_ms": 1311.62796350365,
+                "pop_variance_ms": 0.010092597772390632
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2187.073,
+                "percent95_ms": 2195.9249999999997,
+                "mean_ms": 2186.7395060240965,
+                "pop_variance_ms": 0.04719553545478299
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1520.175,
+                "percent95_ms": 1526.717,
+                "mean_ms": 1520.2286101694915,
+                "pop_variance_ms": 0.010750408000574583
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1526.0629999999999,
+                "percent95_ms": 1532.351,
+                "mean_ms": 1525.369313559322,
+                "pop_variance_ms": 0.022846876096595737
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1584.12,
+                "percent95_ms": 1589.536,
+                "mean_ms": 1583.9178508771936,
+                "pop_variance_ms": 0.011367007319867681
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2452.413,
+                "percent95_ms": 2460.9809999999998,
+                "mean_ms": 2452.8019189189185,
+                "pop_variance_ms": 0.020874543101533836
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 182.121,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 3002.3810000000003,
+                "percent95_ms": 3013.6090000000004,
+                "mean_ms": 2997.7639166666663,
+                "pop_variance_ms": 0.1053028195430556
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3350.308,
+                "percent95_ms": 3375.376,
+                "mean_ms": 3218.8465178571423,
+                "pop_variance_ms": 31.269289103785404
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3757.964,
+                "percent95_ms": 3795.116,
+                "mean_ms": 3488.5703461538455,
+                "pop_variance_ms": 116.05504224011091
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4761.505999999999,
+                "percent95_ms": 4797.219,
+                "mean_ms": 4370.472690476191,
+                "pop_variance_ms": 226.1167832899757
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.7819999999999,
+                "percent95_ms": 749.518,
+                "mean_ms": 745.7964351464433,
+                "pop_variance_ms": 0.00369750979391118
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 929.198,
+                "percent95_ms": 932.36,
+                "mean_ms": 932.7838177083337,
+                "pop_variance_ms": 1.426507564763645
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1317.01,
+                "percent95_ms": 1323.188,
+                "mean_ms": 1323.7202426470587,
+                "pop_variance_ms": 6.088493212698475
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.0190000000002,
+                "percent95_ms": 2213.896,
+                "mean_ms": 2204.435524390244,
+                "pop_variance_ms": 0.035859103932331736
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.8789999999999,
+                "percent95_ms": 749.3499999999999,
+                "mean_ms": 746.0359623430962,
+                "pop_variance_ms": 0.0033486947726405385
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.769,
+                "percent95_ms": 756.165,
+                "mean_ms": 752.6851603375526,
+                "pop_variance_ms": 0.004091365830831967
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1313.549,
+                "percent95_ms": 1319.0349999999999,
+                "mean_ms": 1313.8110291970804,
+                "pop_variance_ms": 0.022712244203527087
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2192.801,
+                "percent95_ms": 6796.267,
+                "mean_ms": 2416.9555333333337,
+                "pop_variance_ms": 1165.020331935022
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 747.529,
+                "percent95_ms": 751.126,
+                "mean_ms": 749.1595336134455,
+                "pop_variance_ms": 0.5668968523581136
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.7819999999999,
+                "percent95_ms": 757.12,
+                "mean_ms": 753.9557890295349,
+                "pop_variance_ms": 0.003665330664352232
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1307.963,
+                "percent95_ms": 1313.053,
+                "mean_ms": 1309.3197664233576,
+                "pop_variance_ms": 0.2456448444125953
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2177.842,
+                "percent95_ms": 2187.0389999999998,
+                "mean_ms": 2261.8013999999985,
+                "pop_variance_ms": 560.9834265769401
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 561.824,
+                "percent95_ms": 564.772,
+                "mean_ms": 561.8914905063288,
+                "pop_variance_ms": 0.0029766688511756907
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 748.343,
+                "percent95_ms": 751.328,
+                "mean_ms": 749.0739327731096,
+                "pop_variance_ms": 0.141521744911447
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.403,
+                "percent95_ms": 1328.661,
+                "mean_ms": 1325.4648222222218,
+                "pop_variance_ms": 4.801626750412839
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2208.4860000000003,
+                "percent95_ms": 2240.859,
+                "mean_ms": 2215.132851851851,
+                "pop_variance_ms": 0.237491300545953
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 758.077,
+                "percent95_ms": 761.212,
+                "mean_ms": 762.1928803418805,
+                "pop_variance_ms": 4.0395955362762805
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 942.65,
+                "percent95_ms": 945.933,
+                "mean_ms": 954.0635904255322,
+                "pop_variance_ms": 12.575260584071613
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1332.851,
+                "percent95_ms": 1337.997,
+                "mean_ms": 1340.1363955223896,
+                "pop_variance_ms": 7.466148088388341
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2232.9539999999997,
+                "percent95_ms": 2242.006,
+                "mean_ms": 2233.2582345679016,
+                "pop_variance_ms": 0.03060300230300246
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.577,
+                "percent95_ms": 572.74,
+                "mean_ms": 569.5917243589746,
+                "pop_variance_ms": 0.0036912274560732994
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 755.1569999999999,
+                "percent95_ms": 758.907,
+                "mean_ms": 757.8957914893616,
+                "pop_variance_ms": 1.2737761945139703
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1310.376,
+                "percent95_ms": 1316.104,
+                "mean_ms": 1311.476824817518,
+                "pop_variance_ms": 0.25752237156055174
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2184.247,
+                "percent95_ms": 2194.5389999999998,
+                "mean_ms": 2182.250686746988,
+                "pop_variance_ms": 0.04588479358861929
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 747.052,
+                "percent95_ms": 750.4830000000001,
+                "mean_ms": 747.0284769874473,
+                "pop_variance_ms": 0.004187475948215203
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 929.807,
+                "percent95_ms": 933.825,
+                "mean_ms": 929.8733177083332,
+                "pop_variance_ms": 0.008241432623019747
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1318.808,
+                "percent95_ms": 1324.644,
+                "mean_ms": 1322.2977058823528,
+                "pop_variance_ms": 1.2342843447076122
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.016,
+                "percent95_ms": 2336.128,
+                "mean_ms": 2267.4034749999996,
+                "pop_variance_ms": 225.4668891687494
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 747.792,
+                "percent95_ms": 751.147,
+                "mean_ms": 747.8122426778245,
+                "pop_variance_ms": 0.0037316645436179137
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.688,
+                "percent95_ms": 757.681,
+                "mean_ms": 753.8835063291137,
+                "pop_variance_ms": 0.004308192933504245
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1314.258,
+                "percent95_ms": 1319.807,
+                "mean_ms": 1320.9010661764712,
+                "pop_variance_ms": 3.37275646059121
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2191.384,
+                "percent95_ms": 2396.331,
+                "mean_ms": 2205.5947439024403,
+                "pop_variance_ms": 3.4264114817270976
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1521.4730000000002,
+                "percent95_ms": 1528.4199999999998,
+                "mean_ms": 1521.7074406779661,
+                "pop_variance_ms": 0.01121171714478595
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1527.8700000000001,
+                "percent95_ms": 1533.782,
+                "mean_ms": 1527.9125338983054,
+                "pop_variance_ms": 0.022681508740376378
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1585.1889999999999,
+                "percent95_ms": 1717.435,
+                "mean_ms": 1641.8443636363643,
+                "pop_variance_ms": 128.5043549549041
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2453.601,
+                "percent95_ms": 2730.804,
+                "mean_ms": 2505.785305555555,
+                "pop_variance_ms": 131.84849448432334
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 182.123,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 3000.727,
+                "percent95_ms": 3011.0359999999996,
+                "mean_ms": 2997.6937833333327,
+                "pop_variance_ms": 0.10033753420305584
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3356.102,
+                "percent95_ms": 3376.84,
+                "mean_ms": 3269.18709090909,
+                "pop_variance_ms": 25.565656991573555
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3752.402,
+                "percent95_ms": 3798.801,
+                "mean_ms": 3524.7582156862754,
+                "pop_variance_ms": 109.95364525848295
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4783.6410000000005,
+                "percent95_ms": 4796.978,
+                "mean_ms": 4569.297350000001,
+                "pop_variance_ms": 147.8191280547275
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.301,
+                "percent95_ms": 748.826,
+                "mean_ms": 749.5403235294117,
+                "pop_variance_ms": 4.259627511630623
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 928.081,
+                "percent95_ms": 931.9399999999999,
+                "mean_ms": 928.0814766839374,
+                "pop_variance_ms": 0.005755690270181747
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.029,
+                "percent95_ms": 1323.578,
+                "mean_ms": 1316.459816176471,
+                "pop_variance_ms": 0.01396876023826771
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.396,
+                "percent95_ms": 2315.427,
+                "mean_ms": 2216.5756666666675,
+                "pop_variance_ms": 1.3746103331604933
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.112,
+                "percent95_ms": 749.216,
+                "mean_ms": 746.0222050209205,
+                "pop_variance_ms": 0.0033241328073387996
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.629,
+                "percent95_ms": 754.9879999999999,
+                "mean_ms": 751.8191097046416,
+                "pop_variance_ms": 0.0035188342580070838
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.9959999999999,
+                "percent95_ms": 1318.3899999999999,
+                "mean_ms": 1320.106529411765,
+                "pop_variance_ms": 8.679556376690309
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2188.366,
+                "percent95_ms": 2198.119,
+                "mean_ms": 2187.233902439024,
+                "pop_variance_ms": 0.07010692084414025
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.663,
+                "percent95_ms": 750.128,
+                "mean_ms": 746.8637740585771,
+                "pop_variance_ms": 0.0034461169280299714
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.907,
+                "percent95_ms": 756.399,
+                "mean_ms": 756.2857966101693,
+                "pop_variance_ms": 2.2642529009247347
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1306.1190000000001,
+                "percent95_ms": 1310.33,
+                "mean_ms": 1306.1033284671528,
+                "pop_variance_ms": 0.006670585417656738
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2178.2819999999997,
+                "percent95_ms": 2185.4230000000002,
+                "mean_ms": 2224.244135802469,
+                "pop_variance_ms": 156.67586356927785
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 561.367,
+                "percent95_ms": 563.952,
+                "mean_ms": 561.3844731861197,
+                "pop_variance_ms": 0.0026567794858740725
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 748.2180000000001,
+                "percent95_ms": 751.408,
+                "mean_ms": 750.6354663865542,
+                "pop_variance_ms": 1.5417744854589546
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1315.865,
+                "percent95_ms": 1326.921,
+                "mean_ms": 1317.5358088235294,
+                "pop_variance_ms": 0.028673146228157413
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2207.605,
+                "percent95_ms": 2306.024,
+                "mean_ms": 2217.3334938271596,
+                "pop_variance_ms": 0.8581673579289733
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 757.268,
+                "percent95_ms": 761.24,
+                "mean_ms": 757.3182245762713,
+                "pop_variance_ms": 0.004978875877531598
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 941.705,
+                "percent95_ms": 945.564,
+                "mean_ms": 941.788852631579,
+                "pop_variance_ms": 0.00501667099933517
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.528,
+                "percent95_ms": 1337.3980000000001,
+                "mean_ms": 1333.4706444444453,
+                "pop_variance_ms": 0.005149296703209856
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2232.3469999999998,
+                "percent95_ms": 2238.7450000000003,
+                "mean_ms": 2230.6093580246907,
+                "pop_variance_ms": 0.06654022301996672
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 568.902,
+                "percent95_ms": 572.0840000000001,
+                "mean_ms": 581.7321666666666,
+                "pop_variance_ms": 25.541039509740198
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 754.21,
+                "percent95_ms": 757.3,
+                "mean_ms": 762.9000042735036,
+                "pop_variance_ms": 16.937966350431605
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1309.5639999999999,
+                "percent95_ms": 1316.016,
+                "mean_ms": 1347.7558270676695,
+                "pop_variance_ms": 99.04670561937608
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2183.769,
+                "percent95_ms": 2192.6459999999997,
+                "mean_ms": 2234.755666666666,
+                "pop_variance_ms": 111.15462028355554
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 745.949,
+                "percent95_ms": 749.675,
+                "mean_ms": 746.043903765691,
+                "pop_variance_ms": 0.0036763742124962845
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 928.5609999999999,
+                "percent95_ms": 932.859,
+                "mean_ms": 928.5889948186531,
+                "pop_variance_ms": 0.005525979549195944
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.3780000000002,
+                "percent95_ms": 1323.569,
+                "mean_ms": 1316.5704999999991,
+                "pop_variance_ms": 0.015110482147058806
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2203.948,
+                "percent95_ms": 2353.349,
+                "mean_ms": 2218.0051728395065,
+                "pop_variance_ms": 2.5714528366367944
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.5319999999999,
+                "percent95_ms": 750.3480000000001,
+                "mean_ms": 746.5228158995819,
+                "pop_variance_ms": 0.0042414116648518164
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.614,
+                "percent95_ms": 755.58,
+                "mean_ms": 752.5230970464136,
+                "pop_variance_ms": 0.003528840307037705
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1312.92,
+                "percent95_ms": 1317.987,
+                "mean_ms": 1315.735294117647,
+                "pop_variance_ms": 1.2090301420164364
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2188.3880000000004,
+                "percent95_ms": 2206.1839999999997,
+                "mean_ms": 2255.5128375000004,
+                "pop_variance_ms": 334.8546978272861
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1521.131,
+                "percent95_ms": 1527.232,
+                "mean_ms": 1521.065957627118,
+                "pop_variance_ms": 0.011316555159221515
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1526.7900000000002,
+                "percent95_ms": 1533.255,
+                "mean_ms": 1527.2900593220347,
+                "pop_variance_ms": 0.01836371734393856
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1583.717,
+                "percent95_ms": 1590.608,
+                "mean_ms": 1584.162763157895,
+                "pop_variance_ms": 0.011948302566712816
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2452.1980000000003,
+                "percent95_ms": 2459.172,
+                "mean_ms": 2452.031513513513,
+                "pop_variance_ms": 0.015415830466033696
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 182.175,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 3003.7110000000002,
+                "percent95_ms": 3012.18,
+                "mean_ms": 3001.90435,
+                "pop_variance_ms": 0.06387791586083333
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3364.283,
+                "percent95_ms": 3377.4359999999997,
+                "mean_ms": 3239.266732142856,
+                "pop_variance_ms": 30.292544703196114
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3762.984,
+                "percent95_ms": 3797.509,
+                "mean_ms": 3541.2676078431373,
+                "pop_variance_ms": 117.67787792827761
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4767.698,
+                "percent95_ms": 4801.02,
+                "mean_ms": 4536.794200000001,
+                "pop_variance_ms": 154.73570006240996
             }
         ]
     },
@@ -1405,6 +3205,942 @@
     },
     {
         "index": 0,
+        "rtt_ms": 184.457,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.423,
+                "percent95_ms": 569.005,
+                "mean_ms": 565.6067834394905,
+                "pop_variance_ms": 0.003432808379853144
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.064,
+                "percent95_ms": 755.892,
+                "mean_ms": 756.3783813559324,
+                "pop_variance_ms": 4.3843868517444
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.507,
+                "percent95_ms": 1321.48,
+                "mean_ms": 1312.7351313868617,
+                "pop_variance_ms": 0.05117966367616823
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2187.81,
+                "percent95_ms": 2210.202,
+                "mean_ms": 2193.0267804878044,
+                "pop_variance_ms": 0.36755048924449807
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 184.457,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 566.661,
+                "percent95_ms": 574.351,
+                "mean_ms": 567.3476389776356,
+                "pop_variance_ms": 0.00962771595592484
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.2520000000001,
+                "percent95_ms": 764.015,
+                "mean_ms": 754.4740759493669,
+                "pop_variance_ms": 0.02499375931068739
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1311.818,
+                "percent95_ms": 1323.4479999999999,
+                "mean_ms": 1312.305481751825,
+                "pop_variance_ms": 0.034741421446747224
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2189.7380000000003,
+                "percent95_ms": 2346.63,
+                "mean_ms": 2213.6878292682923,
+                "pop_variance_ms": 19.90079625353183
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 184.457,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 564.581,
+                "percent95_ms": 570.231,
+                "mean_ms": 565.0820380952385,
+                "pop_variance_ms": 0.007488399642993197
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.001,
+                "percent95_ms": 763.506,
+                "mean_ms": 753.8484135021096,
+                "pop_variance_ms": 0.06427845322985991
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1320.11,
+                "percent95_ms": 1330.1490000000001,
+                "mean_ms": 1320.8358823529409,
+                "pop_variance_ms": 0.023138035030276855
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2212.0350000000003,
+                "percent95_ms": 2319.554,
+                "mean_ms": 2258.7813999999994,
+                "pop_variance_ms": 140.93015062791503
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 184.457,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 563.742,
+                "percent95_ms": 569.217,
+                "mean_ms": 564.0866158730162,
+                "pop_variance_ms": 0.007080583233398842
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.035,
+                "percent95_ms": 756.753,
+                "mean_ms": 751.3010756302524,
+                "pop_variance_ms": 0.0059873380699103146
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1318.441,
+                "percent95_ms": 1327.6870000000001,
+                "mean_ms": 1319.2070000000003,
+                "pop_variance_ms": 0.017796865617647
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2206.6690000000003,
+                "percent95_ms": 2223.145,
+                "mean_ms": 2274.0906708860753,
+                "pop_variance_ms": 338.58755791568905
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 184.457,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.408,
+                "percent95_ms": 572.3549999999999,
+                "mean_ms": 573.2300354838708,
+                "pop_variance_ms": 3.367815159034226
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 756.413,
+                "percent95_ms": 761.991,
+                "mean_ms": 756.8947288135595,
+                "pop_variance_ms": 0.012713038714593491
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1324.492,
+                "percent95_ms": 1333.194,
+                "mean_ms": 1324.815529411765,
+                "pop_variance_ms": 0.014703247602076135
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2211.828,
+                "percent95_ms": 2302.7470000000003,
+                "mean_ms": 2227.8916666666673,
+                "pop_variance_ms": 12.464084102543216
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 184.457,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 573.9530000000001,
+                "percent95_ms": 577.095,
+                "mean_ms": 573.7858483870967,
+                "pop_variance_ms": 0.004785719128626436
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 760.6650000000001,
+                "percent95_ms": 765.058,
+                "mean_ms": 760.7593106382978,
+                "pop_variance_ms": 0.006218809209886834
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1320.316,
+                "percent95_ms": 1332.504,
+                "mean_ms": 1346.1392330827066,
+                "pop_variance_ms": 73.71702650138177
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2200.952,
+                "percent95_ms": 2285.892,
+                "mean_ms": 2207.737304878049,
+                "pop_variance_ms": 0.7636237521143666
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 184.457,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 577.535,
+                "percent95_ms": 582.4200000000001,
+                "mean_ms": 579.3898469055374,
+                "pop_variance_ms": 0.7322649618755849
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 763.873,
+                "percent95_ms": 769.591,
+                "mean_ms": 785.5378854625546,
+                "pop_variance_ms": 98.97234009861246
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1325.151,
+                "percent95_ms": 1335.741,
+                "mean_ms": 1334.086377777777,
+                "pop_variance_ms": 6.684667153301726
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2205.0550000000003,
+                "percent95_ms": 5088.977,
+                "mean_ms": 2421.0645466666665,
+                "pop_variance_ms": 1048.2153835125146
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 184.457,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 774.672,
+                "percent95_ms": 780.462,
+                "mean_ms": 775.8613565217395,
+                "pop_variance_ms": 0.1692184915337619
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 780.575,
+                "percent95_ms": 786.3480000000001,
+                "mean_ms": 785.6987885462559,
+                "pop_variance_ms": 2.142270605550001
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1329.525,
+                "percent95_ms": 1337.8719999999998,
+                "mean_ms": 1301.9187826086957,
+                "pop_variance_ms": 2.637183604633901
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2191.988,
+                "percent95_ms": 2208.277,
+                "mean_ms": 2192.442804878048,
+                "pop_variance_ms": 0.5681984525960739
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 184.457,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.322,
+                "percent95_ms": 570.578,
+                "mean_ms": 565.8654426751591,
+                "pop_variance_ms": 0.0066764327371597225
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.654,
+                "percent95_ms": 758.312,
+                "mean_ms": 757.2379576271187,
+                "pop_variance_ms": 3.9782763705321043
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1317.656,
+                "percent95_ms": 1328.4309999999998,
+                "mean_ms": 1318.6970220588228,
+                "pop_variance_ms": 0.017565470639219347
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2208.444,
+                "percent95_ms": 7980.6759999999995,
+                "mean_ms": 2771.6054782608694,
+                "pop_variance_ms": 3765.0229910108296
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 184.457,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.585,
+                "percent95_ms": 569.256,
+                "mean_ms": 567.516504792332,
+                "pop_variance_ms": 0.938230573240392
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.212,
+                "percent95_ms": 761.09,
+                "mean_ms": 765.1518841201715,
+                "pop_variance_ms": 10.772232965810609
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1318.333,
+                "percent95_ms": 1334.393,
+                "mean_ms": 1332.8094296296297,
+                "pop_variance_ms": 11.574522604393191
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2203.206,
+                "percent95_ms": 2316.6479999999997,
+                "mean_ms": 2219.9951358024678,
+                "pop_variance_ms": 5.273206109055629
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 184.457,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 630.973,
+                "percent95_ms": 637.555,
+                "mean_ms": 630.2336077738513,
+                "pop_variance_ms": 0.02812207678962158
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 818.082,
+                "percent95_ms": 824.311,
+                "mean_ms": 817.6357762557083,
+                "pop_variance_ms": 0.020480257607472744
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1386.723,
+                "percent95_ms": 1392.483,
+                "mean_ms": 1385.788553846153,
+                "pop_variance_ms": 0.0211398948778698
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2277.154,
+                "percent95_ms": 2369.09,
+                "mean_ms": 2284.129493670886,
+                "pop_variance_ms": 1.7659725280727454
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 184.457,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 564.437,
+                "percent95_ms": 575.065,
+                "mean_ms": 567.8704568690093,
+                "pop_variance_ms": 1.1762629072768938
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.5659999999999,
+                "percent95_ms": 765.6800000000001,
+                "mean_ms": 773.191722943723,
+                "pop_variance_ms": 23.09058012154229
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1325.7669999999998,
+                "percent95_ms": 1343.192,
+                "mean_ms": 1331.6260666666665,
+                "pop_variance_ms": 1.0548937006696295
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2219.562,
+                "percent95_ms": 2425.767,
+                "mean_ms": 2323.300628205128,
+                "pop_variance_ms": 488.8571061592592
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 184.457,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 565.8389999999999,
+                "percent95_ms": 577.394,
+                "mean_ms": 583.5575114754098,
+                "pop_variance_ms": 9.992202575830195
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 751.555,
+                "percent95_ms": 758.29,
+                "mean_ms": 755.8541186440676,
+                "pop_variance_ms": 3.5169694429011775
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1310.738,
+                "percent95_ms": 1326.786,
+                "mean_ms": 1316.625514705883,
+                "pop_variance_ms": 2.274700732499784
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2190.921,
+                "percent95_ms": 2225.463,
+                "mean_ms": 2221.4598148148148,
+                "pop_variance_ms": 33.87026020099039
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 184.775,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.903,
+                "percent95_ms": 573.309,
+                "mean_ms": 570.685836538461,
+                "pop_variance_ms": 0.11318892361751108
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 759.109,
+                "percent95_ms": 762.848,
+                "mean_ms": 759.2790510638305,
+                "pop_variance_ms": 0.006468215086754174
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1323.6619999999998,
+                "percent95_ms": 1334.931,
+                "mean_ms": 1327.196066666667,
+                "pop_variance_ms": 1.020715342314074
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2207.0280000000002,
+                "percent95_ms": 2308.8700000000003,
+                "mean_ms": 2217.522629629631,
+                "pop_variance_ms": 2.0238184714924565
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 184.775,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 570.4019999999999,
+                "percent95_ms": 574.187,
+                "mean_ms": 573.2237322580645,
+                "pop_variance_ms": 1.7007910083702498
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 758.138,
+                "percent95_ms": 762.306,
+                "mean_ms": 762.7697863247861,
+                "pop_variance_ms": 3.468909982262035
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1319.474,
+                "percent95_ms": 1326.775,
+                "mean_ms": 1321.482617647059,
+                "pop_variance_ms": 0.4537122445891004
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2203.895,
+                "percent95_ms": 5263.942,
+                "mean_ms": 2372.535921052631,
+                "pop_variance_ms": 423.5319069778096
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 184.775,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.16,
+                "percent95_ms": 574.456,
+                "mean_ms": 579.265348534202,
+                "pop_variance_ms": 8.589855544689597
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 757.0519999999999,
+                "percent95_ms": 762.149,
+                "mean_ms": 767.2514334763949,
+                "pop_variance_ms": 11.552462139627547
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1330.052,
+                "percent95_ms": 1979.4279999999999,
+                "mean_ms": 1410.9137165354334,
+                "pop_variance_ms": 176.17895054500622
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2229.9880000000003,
+                "percent95_ms": 5251.715,
+                "mean_ms": 2518.080708333334,
+                "pop_variance_ms": 902.1402300846235
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 184.775,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 568.149,
+                "percent95_ms": 571.17,
+                "mean_ms": 569.9536121794875,
+                "pop_variance_ms": 1.0648287023463905
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 757.4340000000001,
+                "percent95_ms": 761.9860000000001,
+                "mean_ms": 758.8170297872349,
+                "pop_variance_ms": 0.1431901819948574
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1329.9240000000002,
+                "percent95_ms": 1335.983,
+                "mean_ms": 1332.0955629629639,
+                "pop_variance_ms": 0.45676412434973923
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2226.3869999999997,
+                "percent95_ms": 2441.7909999999997,
+                "mean_ms": 2331.708324675325,
+                "pop_variance_ms": 432.6643248459595
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 184.775,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 574.1800000000001,
+                "percent95_ms": 577.586,
+                "mean_ms": 575.1858511326855,
+                "pop_variance_ms": 0.26370807002961844
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 762.753,
+                "percent95_ms": 766.606,
+                "mean_ms": 762.8000811965815,
+                "pop_variance_ms": 0.0045935794677661014
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1335.9540000000002,
+                "percent95_ms": 1342.2620000000002,
+                "mean_ms": 1337.296604477612,
+                "pop_variance_ms": 0.2443383757913235
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2231.7580000000003,
+                "percent95_ms": 3156.887,
+                "mean_ms": 2330.6800779220775,
+                "pop_variance_ms": 115.8597231411368
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 184.775,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 578.468,
+                "percent95_ms": 581.451,
+                "mean_ms": 578.8616221498371,
+                "pop_variance_ms": 0.11509971840446045
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 766.668,
+                "percent95_ms": 770.893,
+                "mean_ms": 766.7608669527895,
+                "pop_variance_ms": 0.008411982269852092
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1332.12,
+                "percent95_ms": 1354.786,
+                "mean_ms": 1355.1089548872183,
+                "pop_variance_ms": 31.525598128449086
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2216.6820000000002,
+                "percent95_ms": 3404.598,
+                "mean_ms": 2480.3419999999996,
+                "pop_variance_ms": 1724.7351253038078
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 184.775,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 582.4639999999999,
+                "percent95_ms": 586.518,
+                "mean_ms": 582.3246491803274,
+                "pop_variance_ms": 0.008060197335941955
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 770.814,
+                "percent95_ms": 1074.12,
+                "mean_ms": 812.8551818181814,
+                "pop_variance_ms": 33.03666286909422
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1339.934,
+                "percent95_ms": 2675.195,
+                "mean_ms": 1698.322518867924,
+                "pop_variance_ms": 363.7784776555893
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2219.6189999999997,
+                "percent95_ms": 2330.069,
+                "mean_ms": 2233.216086419753,
+                "pop_variance_ms": 2.108170405757965
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 184.775,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 781.266,
+                "percent95_ms": 785.218,
+                "mean_ms": 781.2365196506553,
+                "pop_variance_ms": 0.005857001655727382
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 787.482,
+                "percent95_ms": 791.43,
+                "mean_ms": 787.5772819383259,
+                "pop_variance_ms": 0.00689546357689845
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1341.212,
+                "percent95_ms": 1347.754,
+                "mean_ms": 1314.3050802919718,
+                "pop_variance_ms": 3.5042354222928216
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2198.14,
+                "percent95_ms": 2327.828,
+                "mean_ms": 2209.897841463415,
+                "pop_variance_ms": 2.0921232784016945
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 184.775,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.3340000000001,
+                "percent95_ms": 572.286,
+                "mean_ms": 569.3925737179487,
+                "pop_variance_ms": 0.002989045090719511
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 758.519,
+                "percent95_ms": 762.981,
+                "mean_ms": 765.3340214592276,
+                "pop_variance_ms": 3.9025629213772226
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1328.84,
+                "percent95_ms": 1335.063,
+                "mean_ms": 1331.4912370370375,
+                "pop_variance_ms": 0.5388982808919613
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2215.7960000000003,
+                "percent95_ms": 2647.78,
+                "mean_ms": 2291.6276075949368,
+                "pop_variance_ms": 294.01626297618776
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 184.775,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 570.451,
+                "percent95_ms": 574.828,
+                "mean_ms": 573.9385451612904,
+                "pop_variance_ms": 3.3427437026608633
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 758.62,
+                "percent95_ms": 762.812,
+                "mean_ms": 764.2525854700855,
+                "pop_variance_ms": 5.287514217704234
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1329.85,
+                "percent95_ms": 1343.751,
+                "mean_ms": 1345.5578571428564,
+                "pop_variance_ms": 11.473502602904407
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2229.118,
+                "percent95_ms": 5820.309,
+                "mean_ms": 2650.36625,
+                "pop_variance_ms": 1161.2436282278052
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 184.775,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 636.3879999999999,
+                "percent95_ms": 641.03,
+                "mean_ms": 636.1053035714291,
+                "pop_variance_ms": 0.018316660654272947
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 824.579,
+                "percent95_ms": 830.65,
+                "mean_ms": 825.1737004608294,
+                "pop_variance_ms": 0.20670356820059885
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1397.6589999999999,
+                "percent95_ms": 1404.7179999999998,
+                "mean_ms": 1397.2346976744186,
+                "pop_variance_ms": 0.026787038133405446
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2297.463,
+                "percent95_ms": 3269.846,
+                "mean_ms": 2430.8218933333324,
+                "pop_variance_ms": 228.83718135665524
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 184.775,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 567.2909999999999,
+                "percent95_ms": 571.639,
+                "mean_ms": 569.4816666666665,
+                "pop_variance_ms": 1.050593330100427
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 756.313,
+                "percent95_ms": 760.639,
+                "mean_ms": 757.2415677966104,
+                "pop_variance_ms": 0.1567210100081155
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1333.123,
+                "percent95_ms": 1498.612,
+                "mean_ms": 1360.7233636363637,
+                "pop_variance_ms": 21.167879504731403
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2248.473,
+                "percent95_ms": 2849.164,
+                "mean_ms": 2320.126564102564,
+                "pop_variance_ms": 56.69061953027153
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 184.775,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 568.89,
+                "percent95_ms": 572.283,
+                "mean_ms": 568.9976602564104,
+                "pop_variance_ms": 0.0037582622948306938
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 757.197,
+                "percent95_ms": 762.745,
+                "mean_ms": 758.1483957446807,
+                "pop_variance_ms": 0.15975519999232235
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1321.3790000000001,
+                "percent95_ms": 1330.6860000000001,
+                "mean_ms": 1322.5701764705882,
+                "pop_variance_ms": 0.03531427410121102
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2209.16,
+                "percent95_ms": 3601.1389999999997,
+                "mean_ms": 2344.436519480519,
+                "pop_variance_ms": 284.5981580904574
+            }
+        ]
+    },
+    {
+        "index": 0,
         "rtt_ms": 185.602,
         "kexName": "firesaber",
         "sigName": "ecdsap256",
@@ -1868,6 +4604,834 @@
                 "percent95_ms": 2223.026,
                 "mean_ms": 2200.382829268292,
                 "pop_variance_ms": 0.11550123084889968
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.05,
+                "percent95_ms": 749.4699999999999,
+                "mean_ms": 746.4250920502085,
+                "pop_variance_ms": 0.027054164359727597
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 929.35,
+                "percent95_ms": 933.998,
+                "mean_ms": 929.7263854166667,
+                "pop_variance_ms": 0.01267572475770398
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1317.81,
+                "percent95_ms": 1323.609,
+                "mean_ms": 1317.9658382352943,
+                "pop_variance_ms": 0.01099553920912635
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2204.774,
+                "percent95_ms": 2268.503,
+                "mean_ms": 2209.962207317074,
+                "pop_variance_ms": 0.6372007772375071
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.596,
+                "percent95_ms": 749.938,
+                "mean_ms": 747.349933054393,
+                "pop_variance_ms": 0.15022339280723368
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 752.567,
+                "percent95_ms": 756.146,
+                "mean_ms": 753.4528396624476,
+                "pop_variance_ms": 0.14481424748484042
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1313.29,
+                "percent95_ms": 1320.2350000000001,
+                "mean_ms": 1320.1984999999997,
+                "pop_variance_ms": 3.3600912284411755
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2191.49,
+                "percent95_ms": 2205.883,
+                "mean_ms": 2190.972548780489,
+                "pop_variance_ms": 0.11480645915005919
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "dilithium4",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 747.923,
+                "percent95_ms": 751.5469999999999,
+                "mean_ms": 747.9276192468626,
+                "pop_variance_ms": 0.0038756690223910504
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.889,
+                "percent95_ms": 757.543,
+                "mean_ms": 758.9451276595748,
+                "pop_variance_ms": 1.516008726051788
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1307.862,
+                "percent95_ms": 1317.523,
+                "mean_ms": 1314.9488467153278,
+                "pop_variance_ms": 2.654260455998402
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2180.26,
+                "percent95_ms": 2315.391,
+                "mean_ms": 2237.7035802469136,
+                "pop_variance_ms": 62.51398363767566
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 561.849,
+                "percent95_ms": 564.149,
+                "mean_ms": 561.8828322784805,
+                "pop_variance_ms": 0.0020068973547808884
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 748.702,
+                "percent95_ms": 751.9970000000001,
+                "mean_ms": 748.7487857142855,
+                "pop_variance_ms": 0.003668808546518605
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1316.752,
+                "percent95_ms": 1325.798,
+                "mean_ms": 1317.4932720588235,
+                "pop_variance_ms": 0.01670647019804291
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2208.658,
+                "percent95_ms": 2238.7709999999997,
+                "mean_ms": 2214.4181111111106,
+                "pop_variance_ms": 0.17766382706172815
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "falcon1024",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 758.216,
+                "percent95_ms": 761.943,
+                "mean_ms": 759.4089872340422,
+                "pop_variance_ms": 0.3360109584211139
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 942.406,
+                "percent95_ms": 946.3359999999999,
+                "mean_ms": 942.5556736842108,
+                "pop_variance_ms": 0.021117525388254843
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1334.4499999999998,
+                "percent95_ms": 1339.06,
+                "mean_ms": 1334.5012814814809,
+                "pop_variance_ms": 0.008862403431879306
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2234.136,
+                "percent95_ms": 2240.17,
+                "mean_ms": 2236.2282222222216,
+                "pop_variance_ms": 1.5997749128888874
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "falcon512",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 569.607,
+                "percent95_ms": 572.7130000000001,
+                "mean_ms": 569.7708878205126,
+                "pop_variance_ms": 0.004878373182928586
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 755.1179999999999,
+                "percent95_ms": 759.378,
+                "mean_ms": 755.3896906779657,
+                "pop_variance_ms": 0.015509414086523267
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1310.154,
+                "percent95_ms": 1315.972,
+                "mean_ms": 1310.026416058394,
+                "pop_variance_ms": 0.012297637352442879
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2186.395,
+                "percent95_ms": 2195.105,
+                "mean_ms": 2185.5206987951806,
+                "pop_variance_ms": 0.05101264271650472
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium2",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 746.6270000000001,
+                "percent95_ms": 750.17,
+                "mean_ms": 746.5800543933049,
+                "pop_variance_ms": 0.0035304756497610322
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 929.717,
+                "percent95_ms": 933.416,
+                "mean_ms": 936.2385497382197,
+                "pop_variance_ms": 4.36987232123182
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1318.489,
+                "percent95_ms": 1324.965,
+                "mean_ms": 1321.9837794117648,
+                "pop_variance_ms": 1.0500794081572231
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2206.484,
+                "percent95_ms": 4821.608,
+                "mean_ms": 2357.1500649350655,
+                "pop_variance_ms": 512.9450366319048
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "p256_dilithium3",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 747.414,
+                "percent95_ms": 750.497,
+                "mean_ms": 748.5015210084035,
+                "pop_variance_ms": 0.09230662474535702
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 753.3870000000001,
+                "percent95_ms": 756.9639999999999,
+                "mean_ms": 754.1184599156117,
+                "pop_variance_ms": 0.1417700531007138
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1312.9930000000002,
+                "percent95_ms": 1317.7250000000001,
+                "mean_ms": 1312.8575255474454,
+                "pop_variance_ms": 0.007597842161756125
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2191.315,
+                "percent95_ms": 3731.324,
+                "mean_ms": 2392.359040000001,
+                "pop_variance_ms": 631.0504073058516
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "rainbowIaclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 1523.216,
+                "percent95_ms": 1527.938,
+                "mean_ms": 1524.4213305084747,
+                "pop_variance_ms": 0.28851097008567916
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 1528.136,
+                "percent95_ms": 1534.559,
+                "mean_ms": 1528.343474576271,
+                "pop_variance_ms": 0.00928469628325194
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1586.1879999999999,
+                "percent95_ms": 1590.6480000000001,
+                "mean_ms": 1585.852787610619,
+                "pop_variance_ms": 0.008749047176129688
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2453.366,
+                "percent95_ms": 2462.012,
+                "mean_ms": 2454.6083648648637,
+                "pop_variance_ms": 0.12758117266417038
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 199.842,
+        "kexName": "prime256v1",
+        "sigName": "rainbowVcclassic",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 3003.1409999999996,
+                "percent95_ms": 3011.728,
+                "mean_ms": 2999.1014666666674,
+                "pop_variance_ms": 0.10513679871555566
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 3357.741,
+                "percent95_ms": 3377.0280000000002,
+                "mean_ms": 3288.394163636363,
+                "pop_variance_ms": 18.956071646282304
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 3765.125,
+                "percent95_ms": 3894.012,
+                "mean_ms": 3656.49442,
+                "pop_variance_ms": 62.09413714680358
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 4782.168000000001,
+                "percent95_ms": 4907.857,
+                "mean_ms": 4620.597230769231,
+                "pop_variance_ms": 112.66165396612624
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "rtt_ms": 216.823,
+        "kexName": "firesaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 615.275,
+                "percent95_ms": 624.3,
+                "mean_ms": 622.0713741258735,
+                "pop_variance_ms": 6.209452932520869
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 817.9100000000001,
+                "percent95_ms": 831.176,
+                "mean_ms": 819.3580091743122,
+                "pop_variance_ms": 0.0761109864402828
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1428.137,
+                "percent95_ms": 1443.518,
+                "mean_ms": 1428.5110396825398,
+                "pop_variance_ms": 0.08652138894286965
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2337.705,
+                "percent95_ms": 2369.4790000000003,
+                "mean_ms": 2346.3428181818167,
+                "pop_variance_ms": 5.047434676564345
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "rtt_ms": 216.823,
+        "kexName": "kyber1024",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 616.0219999999999,
+                "percent95_ms": 625.641,
+                "mean_ms": 616.9456262975783,
+                "pop_variance_ms": 0.031177542642353426
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 819.352,
+                "percent95_ms": 830.923,
+                "mean_ms": 819.4951009174306,
+                "pop_variance_ms": 0.03686252747605418
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1425.212,
+                "percent95_ms": 1454.01,
+                "mean_ms": 1427.013825396826,
+                "pop_variance_ms": 0.11542224622348203
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2336.129,
+                "percent95_ms": 2362.384,
+                "mean_ms": 2343.9513766233777,
+                "pop_variance_ms": 6.76831052192309
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "rtt_ms": 216.823,
+        "kexName": "kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 614.1560000000001,
+                "percent95_ms": 623.121,
+                "mean_ms": 617.3602604166671,
+                "pop_variance_ms": 2.2174370243106556
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 817.037,
+                "percent95_ms": 829.8389999999999,
+                "mean_ms": 817.8992018348621,
+                "pop_variance_ms": 0.04189650668403329
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1441.1119999999999,
+                "percent95_ms": 1468.626,
+                "mean_ms": 1443.3333359999997,
+                "pop_variance_ms": 0.14526659188710395
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2379.416,
+                "percent95_ms": 2486.101,
+                "mean_ms": 2392.4102799999996,
+                "pop_variance_ms": 1.3537559408149331
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "rtt_ms": 216.823,
+        "kexName": "lightsaber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 613.754,
+                "percent95_ms": 621.681,
+                "mean_ms": 614.5585517241379,
+                "pop_variance_ms": 0.094971280964566
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 816.554,
+                "percent95_ms": 828.797,
+                "mean_ms": 817.004105022831,
+                "pop_variance_ms": 0.03921474337253188
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1438.231,
+                "percent95_ms": 1458.296,
+                "mean_ms": 1450.087879032258,
+                "pop_variance_ms": 16.314247075106334
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2364.6690000000003,
+                "percent95_ms": 2406.346,
+                "mean_ms": 2370.570144736843,
+                "pop_variance_ms": 2.332228477492208
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "rtt_ms": 216.823,
+        "kexName": "ntru_hps2048509",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 618.268,
+                "percent95_ms": 626.62,
+                "mean_ms": 618.2233055555552,
+                "pop_variance_ms": 0.020171176628858038
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 820.755,
+                "percent95_ms": 830.518,
+                "mean_ms": 821.4843271889398,
+                "pop_variance_ms": 0.024053845123362165
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1437.9569999999999,
+                "percent95_ms": 1455.305,
+                "mean_ms": 1465.3374552845535,
+                "pop_variance_ms": 84.87893374982526
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2364.9170000000004,
+                "percent95_ms": 2389.721,
+                "mean_ms": 2365.489105263159,
+                "pop_variance_ms": 0.2099625309099724
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "rtt_ms": 216.823,
+        "kexName": "ntru_hps2048677",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 622.873,
+                "percent95_ms": 629.5260000000001,
+                "mean_ms": 622.9618881118876,
+                "pop_variance_ms": 0.01706768202943907
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 826.3190000000001,
+                "percent95_ms": 836.4549999999999,
+                "mean_ms": 831.404888372093,
+                "pop_variance_ms": 4.844036968285214
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1435.227,
+                "percent95_ms": 1456.2710000000002,
+                "mean_ms": 1436.9978160000007,
+                "pop_variance_ms": 0.20476332056614396
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2359.4750000000004,
+                "percent95_ms": 2835.3630000000003,
+                "mean_ms": 2402.5857066666663,
+                "pop_variance_ms": 31.196152702207282
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "rtt_ms": 216.823,
+        "kexName": "ntru_hps4096821",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 628.383,
+                "percent95_ms": 665.843,
+                "mean_ms": 635.1799785714283,
+                "pop_variance_ms": 1.4474449787138266
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 833.1990000000001,
+                "percent95_ms": 864.99,
+                "mean_ms": 835.9339018691588,
+                "pop_variance_ms": 0.14728364263990318
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1439.369,
+                "percent95_ms": 1455.165,
+                "mean_ms": 1440.2551119999996,
+                "pop_variance_ms": 0.13344499163545578
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2347.397,
+                "percent95_ms": 2380.598,
+                "mean_ms": 2352.8084935064926,
+                "pop_variance_ms": 1.6853135345356716
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "rtt_ms": 216.823,
+        "kexName": "p256_frodo640aes",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 840.7470000000001,
+                "percent95_ms": 851.1339999999999,
+                "mean_ms": 841.8997028301883,
+                "pop_variance_ms": 0.10314405339753915
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 846.949,
+                "percent95_ms": 857.433,
+                "mean_ms": 847.885971563981,
+                "pop_variance_ms": 0.24562801602762732
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1440.5939999999998,
+                "percent95_ms": 1475.016,
+                "mean_ms": 1410.1537007874022,
+                "pop_variance_ms": 4.12045561969
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2343.7239999999997,
+                "percent95_ms": 2396.996,
+                "mean_ms": 2346.2033636363635,
+                "pop_variance_ms": 0.5862610215301064
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "rtt_ms": 216.823,
+        "kexName": "p256_kyber512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 614.029,
+                "percent95_ms": 623.903,
+                "mean_ms": 615.0998581314876,
+                "pop_variance_ms": 0.03604425295219167
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 818.28,
+                "percent95_ms": 858.954,
+                "mean_ms": 824.290253456221,
+                "pop_variance_ms": 1.1063467472952064
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1432.251,
+                "percent95_ms": 1450.4550000000002,
+                "mean_ms": 1432.6282159999998,
+                "pop_variance_ms": 0.09506481189734425
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2346.24,
+                "percent95_ms": 2382.4049999999997,
+                "mean_ms": 2440.790986486487,
+                "pop_variance_ms": 524.3347789012296
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "rtt_ms": 216.823,
+        "kexName": "p256_kyber90s512",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 613.206,
+                "percent95_ms": 621.001,
+                "mean_ms": 614.4957551724137,
+                "pop_variance_ms": 0.2591227724883353
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 815.852,
+                "percent95_ms": 827.2890000000001,
+                "mean_ms": 818.1982385321107,
+                "pop_variance_ms": 0.34349142262200155
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1438.61,
+                "percent95_ms": 1475.54,
+                "mean_ms": 1456.644821138212,
+                "pop_variance_ms": 31.75473722669972
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2353.114,
+                "percent95_ms": 2550.328,
+                "mean_ms": 2381.7025921052623,
+                "pop_variance_ms": 20.35637159453099
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "rtt_ms": 216.823,
+        "kexName": "p256_sikep434",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 688.804,
+                "percent95_ms": 752.519,
+                "mean_ms": 703.3728937007874,
+                "pop_variance_ms": 4.662121516528072
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 887.0160000000001,
+                "percent95_ms": 1382.399,
+                "mean_ms": 967.4186540540538,
+                "pop_variance_ms": 149.05400368921005
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1503.0140000000001,
+                "percent95_ms": 1528.796,
+                "mean_ms": 1503.9234499999995,
+                "pop_variance_ms": 0.20241074149750038
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2432.726,
+                "percent95_ms": 2466.8199999999997,
+                "mean_ms": 2434.7523378378382,
+                "pop_variance_ms": 0.5832086893588383
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "rtt_ms": 216.823,
+        "kexName": "prime256v1",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 612.012,
+                "percent95_ms": 621.454,
+                "mean_ms": 612.3658865979381,
+                "pop_variance_ms": 0.02507946231360047
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 816.785,
+                "percent95_ms": 825.271,
+                "mean_ms": 816.7505799086757,
+                "pop_variance_ms": 0.025808161567815516
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1438.2330000000002,
+                "percent95_ms": 1455.4959999999999,
+                "mean_ms": 1438.6376640000003,
+                "pop_variance_ms": 0.09726110711910405
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2377.951,
+                "percent95_ms": 2426.155,
+                "mean_ms": 2382.5071578947363,
+                "pop_variance_ms": 0.49722016218559584
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "rtt_ms": 216.823,
+        "kexName": "saber",
+        "sigName": "ecdsap256",
+        "data": [
+            {
+                "fileSize_kb": 1,
+                "median_ms": 614.418,
+                "percent95_ms": 626.59,
+                "mean_ms": 615.6798200692042,
+                "pop_variance_ms": 0.10969622341399171
+            },
+            {
+                "fileSize_kb": 10,
+                "median_ms": 817.2570000000001,
+                "percent95_ms": 830.981,
+                "mean_ms": 818.6822844036697,
+                "pop_variance_ms": 0.07176802455214207
+            },
+            {
+                "fileSize_kb": 100,
+                "median_ms": 1428.584,
+                "percent95_ms": 1452.565,
+                "mean_ms": 1433.6424880000004,
+                "pop_variance_ms": 0.599914108617856
+            },
+            {
+                "fileSize_kb": 1000,
+                "median_ms": 2338.598,
+                "percent95_ms": 2363.412,
+                "mean_ms": 2339.3623116883123,
+                "pop_variance_ms": 0.2117594908119411
             }
         ]
     }

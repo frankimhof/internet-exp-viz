@@ -19,9 +19,13 @@
   color: #61dafb;
 }
 
-h1,h2 {
+h1 {
   margin: 0 0 20px 0px;
-  padding: 0;
+  color: lightblue;
+}
+
+h2 {
+  margin: 0;
   color: lightblue;
 }
 
