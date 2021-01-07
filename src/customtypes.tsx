@@ -8,7 +8,6 @@ type KexSigData = {
 
 type KexSigDataMean = {
   index: number,
-  rtt_ms: number,
   kexName: string,
   sigName: string,
   data: MeanDataPoint[]

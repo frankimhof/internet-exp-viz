@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import * as d3 from 'd3';
-import {KexSigData, KexSigDataMean, DataPoint, MeanDataPoint} from './customtypes';
+import {KexSigDataMean, MeanDataPoint} from './customtypes';
 
 type TickType = {
   value: number,
@@ -11,20 +11,15 @@ type Props = {
   title: string,
   xLabel: string,
   yLabel: string,
-  data: KexSigData[],
-  xAccessor: (d:DataPoint)=>number,
-  yAccessor: (d:DataPoint)=>number,
+  data: KexSigDataMean[],
+  xAccessor: (d:any)=>number,
+  yAccessor: (d:any)=>number,
   yDomain: [number, number]
-  meanAccessor?: (d:MeanDataPoint) =>number,
-  stdDevAccessor?: (d:MeanDataPoint) =>number,
-  showKems: boolean,
-  algList: string[]//used for consistent coloring
+  stdDevAccessor: (d:MeanDataPoint) =>number,
 }
 
-//xDomain: number[],
-//yDomain: number[],
 const width=750;
-const height=800;
+const height=600;
 const marginLeft=100;
 const marginRight=40;
 const marginTop=80;
@@ -33,11 +28,11 @@ const boundedWidth=width-marginLeft-marginRight;
 const boundedHeight=height-marginTop-marginBottom;
 //const colors = ["#6497b1", "#ececa3", "#b5e550", "#607c3c", "#ffbaba", "#ff5252", "#f00", "#a70000", "#005b96"]
 const colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6102", "#FFB000"];
-const dashes = ["2", "2 6", "3 3 8 3", "1 4 2 4 4 4 8 4", "8", "4", "2 3 8 3 2 2"];
+const dashes = ["1 4 2 4 4 4 8 4", "2", "2 6", "3 3 8 3", "8", "4", "2 3 8 3 2 2"];
 
 
-const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, meanAccessor, stdDevAccessor, showKems, algList}) =>{
-  const xScale:d3.ScaleLogarithmic<number, number> = d3.scaleLog().domain([1, 1000]) //packetLoss goes from 0 to 20
+const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, stdDevAccessor}) =>{
+  const xScale:d3.ScaleLogarithmic<number, number> = d3.scaleLog().domain([1, 1000]) //web page sizes go from 1 to 1000 kb
     .range([0, boundedWidth])
   const yScale:d3.ScaleLinear<number, number> = d3.scaleLinear().domain(yDomain)
     .range([boundedHeight, 0])
@@ -55,30 +50,6 @@ const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, y
     } as TickType
   ))
 
-  const namesOfSelectedAlgs= Array.from(new Set(data.map((d:KexSigData)=>showKems? d.kexName:d.sigName)));
-  const getIndex = (d:KexSigData|KexSigDataMean) => algList.indexOf(showKems? d.kexName:d.sigName);
-  //if more than one dataset is selected, create one DataObject holding mean and sample standard deviation of all median and percent95 values
-  const meanAndVarianceData:KexSigDataMean[] = namesOfSelectedAlgs 
-    .map(name=>{
-      const algDatasets = data.filter((d:KexSigData)=>showKems? d.kexName===name:d.sigName===name);
-      const divisor = algDatasets.length>1? algDatasets.length-1 : 1;//prevent division by zero
-      const {index, rtt_ms, kexName, sigName} = algDatasets[0];
-      const res = {index, rtt_ms, kexName, sigName, data: []} as KexSigDataMean;
-      res.data = algDatasets[0].data.map((dp, i)=>{
-        const meanOfMedian_ms = algDatasets.reduce((accum, curr)=>accum+curr.data[i].median_ms, 0)/algDatasets.length;
-        const meanOfPercent95_ms = algDatasets.reduce((accum, curr)=>accum+curr.data[i].percent95_ms, 0)/algDatasets.length;
-        return  {
-            fileSize_kb: dp.fileSize_kb, 
-            meanOfMedian_ms,
-            meanOfPercent95_ms,
-            sampleStdDevOfMedian: Math.sqrt(algDatasets.reduce((accum, curr)=>accum+Math.pow(curr.data[i].median_ms-meanOfMedian_ms, 2), 0)/divisor),
-            sampleStdDevOfPercent95: Math.sqrt(algDatasets.reduce((accum, curr)=>accum+Math.pow(curr.data[i].percent95_ms-meanOfPercent95_ms, 2),0)/divisor)
-          } as MeanDataPoint
-      })
-      return res;
-    })
-  console.log(meanAndVarianceData)
-  const sortByName = (a:any, b:any) => a.kexName.localeCompare(b.kexName)
   return(
     <div className="plot">
       <svg style={{backgroundColor: "#000", borderRadius: "5px"}} width={width} height={height}>
@@ -86,11 +57,8 @@ const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, y
         <g transform={`translate(${marginLeft}, ${marginTop})`}>
           <Labels yLabel={yLabel} xLabel={xLabel}/>
           <Axes xTicks={xTicks as TickType[]} yTicks={yTicks as TickType[]}/>
-          {!meanAccessor && data.sort(sortByName).map((d:KexSigData, lineIndex:number)=>(
-            <CustomLine lineIndex={lineIndex} dataObject={d} color={d.sigName==="ecdsap256" && d.kexName==="prime256v1"? "#ddd":colors[getIndex(d)%5]} strokeWidth={2} dashStyle={dashes[getIndex(d)%7]} xScale={xScale} yScale={yScale} xAccessor={xAccessor} yAccessor={yAccessor}/>
-          ))}
-              {meanAccessor && meanAndVarianceData.sort(sortByName).map((d:KexSigDataMean, lineIndex:number)=>(
-            <CustomLine lineIndex={lineIndex} dataObject={d} color={d.sigName==="ecdsap256" && d.kexName==="prime256v1"? "#ddd":colors[getIndex(d)%5]} strokeWidth={2} dashStyle={dashes[getIndex(d)%7]} xScale={xScale} yScale={yScale} xAccessor={xAccessor} yAccessor={meanAccessor} meanAccessor={meanAccessor} stdDevAccessor={stdDevAccessor}/>
+            {data.map((d:KexSigDataMean, lineIndex:number)=>(
+            <CustomLine lineIndex={lineIndex} dataObject={d} color={d.sigName==="ecdsap256" && d.kexName==="prime256v1"? "#ddd":colors[d.index%5]} strokeWidth={2} dashStyle={dashes[d.index%7]} xScale={xScale} yScale={yScale} xAccessor={xAccessor} yAccessor={yAccessor} stdDevAccessor={stdDevAccessor}/>
           ))}
         </g>
       </svg>
@@ -99,7 +67,7 @@ const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, y
 }
 
 type LineProps = {
-  dataObject:KexSigData|KexSigDataMean,
+  dataObject:KexSigDataMean,
   color: string,
   strokeWidth: number,
   dashStyle: string,
@@ -107,12 +75,11 @@ type LineProps = {
   yScale: d3.ScaleLinear<number, number>
   xAccessor: (d:any)=>number, 
   yAccessor: (d:any)=>number,
-  meanAccessor?: (d:any)=>number,
   stdDevAccessor?: (d:any)=>number,
   lineIndex: number,
 }  
 
-const CustomLine = ({dataObject, color, strokeWidth, dashStyle, xScale, yScale, lineIndex, xAccessor, yAccessor, meanAccessor, stdDevAccessor}:LineProps) => {
+const CustomLine = ({dataObject, color, strokeWidth, dashStyle, xScale, yScale, lineIndex, xAccessor, yAccessor, stdDevAccessor}:LineProps) => {
   //@ts-ignore
   const lineStringGenerator = d3.line().x(d=>xScale(xAccessor(d))).y(d=>yScale(yAccessor(d)))
   //@ts-ignore
@@ -167,12 +134,12 @@ const CustomLine = ({dataObject, color, strokeWidth, dashStyle, xScale, yScale, 
         dataObject.data.map((d:any)=>drawPoint(xScale(xAccessor(d)), yScale(yAccessor(d))))
       }
       {
+        dataObject.data.map((d:MeanDataPoint)=>{
         //@ts-ignore
-        meanAccessor && stdDevAccessor && dataObject.data.map((d:MeanDataPoint)=>{
           const stdDev = stdDevAccessor(d);
-          console.log(stdDev)
-          const mean = meanAccessor(d);
-          console.log(mean)
+          //console.log(stdDev)
+          const mean = yAccessor(d);
+          //console.log(mean)
           return (
           <>
             <line x1={xScale(xAccessor(d))} x2={xScale(xAccessor(d))} y1={yScale(mean+stdDev)} y2={yScale(mean-stdDev)} fill={"none"} stroke={color} strokeWidth={2}/>
