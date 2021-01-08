@@ -23,6 +23,7 @@ function App() {
 
 const InternetExperimentPlots = () =>{
   const [showKems, setShowKems] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);//info for displaying limit of four lines per graph
 
   const availableRTTs = showKems?
     Array.from(new Set(allData.filter((d:KexSigData)=>d.kexName!=="prime256v1").map((d:KexSigData)=>d.rtt_ms).sort((a,b)=>a-b)))
@@ -59,7 +60,11 @@ const InternetExperimentPlots = () =>{
         setChosenKEMs(chosenKEMs.filter(d=>d!==k))
     }
     else{
-      setChosenKEMs([...chosenKEMs, k])
+      if(chosenKEMs.length !== 4) setChosenKEMs([...chosenKEMs, k])
+      else{
+        setShowInfo(true);
+        setTimeout(()=>setShowInfo(false), 1500);
+      }
     }
   }
 
@@ -153,25 +158,25 @@ const InternetExperimentPlots = () =>{
           availableRTTs.map((rtt:number)=>(<div className={chosenRTTs2.includes(rtt)? "button-active button" : "button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleRTTs2(Number(e.target.innerHTML))}}>{rtt}</div>))
         }
       </div>
-
-      <div style={{display: "flex", flexDirection: "row", justifyContent: "space-evenly", flexWrap: "wrap"}}>
+      {showInfo && <h3 style={{color: "red"}}>Limited to 4 lines per graph</h3>}
+      <div style={{display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap"}}>
         <LinePlotLog data={displayData}
-          title="Median"
+          title={`${showKems? "Key Exchange": "Signatures"} - Median`}
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.meanOfMedian_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfMedian}
-          yDomain={[0, getMax(displayData, (d)=>d.meanOfMedian_ms, (d)=>d.sampleStdDevOfMedian)+100]}
+          yDomain={[0, getMax(displayData, (d)=>d.meanOfMedian_ms, (d)=>d.sampleStdDevOfMedian)]}
         />
         <LinePlotLog data={displayData}
-          title="95th percentile"
+          title={`${showKems? "Key Exchange": "Signatures"} - 95th Percentile`}
           yLabel="Web page retrieval time (ms)"
           xLabel="Web page size (kB, log scale)"
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.meanOfPercent95_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfPercent95}
-          yDomain={[0, getMax(displayData, (d)=>d.meanOfPercent95_ms, (d)=>d.sampleStdDevOfPercent95)+100]}
+          yDomain={[0, getMax(displayData, (d)=>d.meanOfPercent95_ms, (d)=>0)]}
         />
         </div>
     </>
