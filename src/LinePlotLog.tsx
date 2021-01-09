@@ -16,6 +16,7 @@ type Props = {
   yAccessor: (d:any)=>number,
   yDomain: [number, number]
   stdDevAccessor: (d:MeanDataPoint) =>number,
+  showStdDeviation: boolean,
 }
 
 const width=650;
@@ -29,14 +30,14 @@ const boundedHeight=height-marginTop-marginBottom;
 //const colors = ["#6497b1", "#ececa3", "#b5e550", "#607c3c", "#ffbaba", "#ff5252", "#f00", "#a70000", "#005b96"]
 //const colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6102", "#FFB000"];
 //const colors = ["#c51b7d", "#4d9221", "#2166ac", "#8c510a"]
-const colors = ["blue", "red", "green", "black"];
-const dashes = ["12 4 2 4", "2", "7", "0"];
-const strokeWidths = [1.5, 3, 1.5, 1];
+const colors = ["black", "blue", "red", "green"];
+const dashes = ["0", "12 4 2 4", "2", "7"];
+const strokeWidths = [1, 1.5, 3, 1.5];
 type PointStyleType = "rect" | "cross" | "circle" | "line"
-const pointStyles:PointStyleType[] = ["rect", "cross", "circle", "line"];
+const pointStyles:PointStyleType[] = ["line", "rect", "cross", "circle"];
 
 
-const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, stdDevAccessor}) =>{
+const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, stdDevAccessor, showStdDeviation}) =>{
   const chosenNumberOfAlgs = new Set(data.map(e=>e.kexName+e.sigName)).size;
   const [mouseXY, setMouseXY] = useState({x:0, y:0});
   const [isHovered, setIsHovered] = useState(false);
@@ -89,6 +90,7 @@ const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, y
               strokeWidth={strokeWidths[styleModulo]}
               xScale={xScale} yScale={yScale} xAccessor={xAccessor} yAccessor={yAccessor} stdDevAccessor={stdDevAccessor}
               lineIndex={styleModulo}
+              showStdDeviation={showStdDeviation}
             />
           )})}
         </g>
@@ -114,9 +116,10 @@ interface LineProps {
   stdDevAccessor?: (d:any)=>number,
   pointStyle: PointStyleType,
   lineIndex: number,
+  showStdDeviation: boolean,
 }  
 
-const CustomLine = ({dataObject, lineIndex, color, strokeWidth, dashStyle, xScale, yScale, xAccessor, yAccessor, stdDevAccessor, pointStyle}:LineProps) => {
+const CustomLine = ({dataObject, lineIndex, color, strokeWidth, dashStyle, xScale, yScale, xAccessor, yAccessor, stdDevAccessor, pointStyle, showStdDeviation}:LineProps) => {
   //@ts-ignore
   const lineStringGenerator = d3.line().x(d=>xScale(xAccessor(d))).y(d=>yScale(yAccessor(d)))
   //@ts-ignore
@@ -155,6 +158,22 @@ const CustomLine = ({dataObject, lineIndex, color, strokeWidth, dashStyle, xScal
 
   return(
     <>
+      {showStdDeviation &&
+        dataObject.data.map((d:MeanDataPoint)=>{
+          //@ts-ignore
+          const stdDev = stdDevAccessor(d);
+          //console.log(stdDev)
+          const mean = yAccessor(d);
+          //console.log(mean)
+          const x = xScale(xAccessor(d))
+          return (
+          <>
+            <line x1={x} x2={x} y1={yScale(mean+stdDev)} y2={yScale(mean-stdDev)} fill={"none"} stroke={color} strokeWidth={1}/>
+            <line x1={x-5} x2={x+5} y1={yScale(mean-stdDev)} y2={yScale(mean-stdDev)} fill={"none"} stroke={color} strokeWidth={1}/>
+            <line x1={x-5} x2={x+5} y1={yScale(mean+stdDev)} y2={yScale(mean+stdDev)} fill={"none"} stroke={color} strokeWidth={1}/>
+          </>
+        )})
+      }
       <line transform={`translate(0, ${lineIndex*textHeight})`} y1={-5} y2={-5} x1={20} x2={70} stroke={color} strokeWidth={strokeWidth} strokeDasharray={dashStyle} fill={"none"}/>
       {drawPoint(20, lineIndex*textHeight-5)}
       {drawPoint(70, lineIndex*textHeight-5)}
@@ -220,21 +239,4 @@ const Labels = ({xLabel, yLabel}:{xLabel: String, yLabel: String}) => {
 //      )
 //      break;
 //
-//show standard deviation 
-//      {
-//        dataObject.data.map((d:MeanDataPoint)=>{
-//          //@ts-ignore
-//          const stdDev = stdDevAccessor(d);
-//          //console.log(stdDev)
-//          const mean = yAccessor(d);
-//          //console.log(mean)
-//          const x = xScale(xAccessor(d))
-//          return (
-//          <>
-//            <line x1={x} x2={x} y1={yScale(mean+stdDev)} y2={yScale(mean-stdDev)} fill={"none"} stroke={color} strokeWidth={2}/>
-//            <line x1={x-5} x2={x+5} y1={yScale(mean-stdDev)} y2={yScale(mean-stdDev)} fill={"none"} stroke={color} strokeWidth={2}/>
-//            <line x1={x-5} x2={x+5} y1={yScale(mean+stdDev)} y2={yScale(mean+stdDev)} fill={"none"} stroke={color} strokeWidth={2}/>
-//          </>
-//        )})
-//      }
 export default LinePlotLog;

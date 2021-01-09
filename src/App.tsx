@@ -23,6 +23,7 @@ function App() {
 
 const InternetExperimentPlots = () =>{
   const [showKems, setShowKems] = useState(true);
+  const [showStdDeviation, setShowStdDeviation] = useState(false);
   const [showInfo, setShowInfo] = useState(false);//info for displaying limit of four lines per graph
 
   const availableRTTs = showKems?
@@ -73,7 +74,11 @@ const InternetExperimentPlots = () =>{
         setChosenSIGs(chosenSIGs.filter(d=>d!==k))
     }
     else{
-      setChosenSIGs([...chosenSIGs, k])
+      if(chosenSIGs.length !== 4) setChosenSIGs([...chosenSIGs, k])
+      else{
+        setShowInfo(true);
+        setTimeout(()=>setShowInfo(false), 1500);
+      }
     }
   }
 
@@ -142,7 +147,7 @@ const InternetExperimentPlots = () =>{
         }
       </div>
 
-      <h3>Create average from available data sets</h3>
+      <h3>Create mean from available data sets</h3>
       <div className={"button-panel"}>
         {
         // Create Buttons for filtering data by RTT 
@@ -150,7 +155,7 @@ const InternetExperimentPlots = () =>{
           availableRTTs.map((rtt:number)=>(<div className={chosenRTTs.includes(rtt)? "button-active button" : "button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleRTTs(Number(e.target.innerHTML))}}>{rtt}</div>))
         }
       </div>
-      <h3>Create average from available data sets</h3>
+      <h3>Create mean from available data sets</h3>
       <div className={"button-panel"}>
         {
         // Create Buttons for filtering data by RTT 
@@ -159,6 +164,7 @@ const InternetExperimentPlots = () =>{
         }
       </div>
       {showInfo && <h3 style={{color: "red"}}>Limited to 4 lines per graph</h3>}
+      <div className={showStdDeviation? "button-active button" :"button"} onClick={()=>setShowStdDeviation(!showStdDeviation)}>Show Standard Deviation</div>
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap"}}>
         <LinePlotLog data={displayData}
           title={`${showKems? "Key Exchange": "Signatures"} - Median`}
@@ -168,6 +174,7 @@ const InternetExperimentPlots = () =>{
           yAccessor={(d)=>d.meanOfMedian_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfMedian}
           yDomain={[0, getMax(displayData, (d)=>d.meanOfMedian_ms, (d)=>d.sampleStdDevOfMedian)]}
+          showStdDeviation={showStdDeviation}
         />
         <LinePlotLog data={displayData}
           title={`${showKems? "Key Exchange": "Signatures"} - 95th Percentile`}
@@ -177,6 +184,7 @@ const InternetExperimentPlots = () =>{
           yAccessor={(d)=>d.meanOfPercent95_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfPercent95}
           yDomain={[0, getMax(displayData, (d)=>d.meanOfPercent95_ms, (d)=>0)]}
+          showStdDeviation={showStdDeviation}
         />
         </div>
     </>
