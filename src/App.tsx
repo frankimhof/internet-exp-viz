@@ -146,17 +146,18 @@ const InternetExperimentPlots = () =>{
           availableSIGs.map((sigName:string)=>(<div className={chosenSIGs.includes(sigName)? "button-active button" :"button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleSIGs(e.target.innerHTML)}}>{sigName}</div>))
         }
       </div>
-
-      <h3>Create mean from available data sets</h3>
+      <h3>Create lines</h3>
+      <div>To create a line, select a dataset. Multiple selection will result in a line that displays mean and standard deviation of selected datasets.</div>
       <div className={"button-panel"}>
+        <h3 style={{display: "flex", alignItems: "center", padding: 0, margin: 0}}>Line 1</h3>
         {
         // Create Buttons for filtering data by RTT 
         //@ts-ignore 
           availableRTTs.map((rtt:number)=>(<div className={chosenRTTs.includes(rtt)? "button-active button" : "button"} onClick={(e:React.MouseEvent)=>{e.preventDefault(); return toggleRTTs(Number(e.target.innerHTML))}}>{rtt}</div>))
         }
       </div>
-      <h3>Create mean from available data sets</h3>
       <div className={"button-panel"}>
+        <h3 style={{display: "flex", alignItems: "center", padding: 0, margin: 0}}>Line 2</h3>
         {
         // Create Buttons for filtering data by RTT 
         //@ts-ignore 
@@ -164,7 +165,7 @@ const InternetExperimentPlots = () =>{
         }
       </div>
       {showInfo && <h3 style={{color: "red"}}>Limited to 4 lines per graph</h3>}
-      <div className={showStdDeviation? "button-active button" :"button"} onClick={()=>setShowStdDeviation(!showStdDeviation)}>Show Standard Deviation</div>
+      <div style={{width: "200px"}} className={showStdDeviation? "button-active button" :"button"} onClick={()=>setShowStdDeviation(!showStdDeviation)}>Show Standard Deviation</div>
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap"}}>
         <LinePlotLog data={displayData}
           title={`${showKems? "Key Exchange": "Signatures"} - Median`}

@@ -30,11 +30,11 @@ const boundedHeight=height-marginTop-marginBottom;
 //const colors = ["#6497b1", "#ececa3", "#b5e550", "#607c3c", "#ffbaba", "#ff5252", "#f00", "#a70000", "#005b96"]
 //const colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6102", "#FFB000"];
 //const colors = ["#c51b7d", "#4d9221", "#2166ac", "#8c510a"]
-const colors = ["black", "blue", "red", "green"];
-const dashes = ["0", "12 4 2 4", "2", "7"];
-const strokeWidths = [1, 1.5, 3, 1.5];
+const colors = ["black", "red", "blue", "green"];
+const dashes = ["0", "2", "12 4 2 4", "7"];
+const strokeWidths = [1, 2.5, 1.5, 1.5];
 type PointStyleType = "rect" | "cross" | "circle" | "line"
-const pointStyles:PointStyleType[] = ["line", "rect", "cross", "circle"];
+const pointStyles:PointStyleType[] = ["line", "cross", "rect", "circle"];
 
 
 const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, stdDevAccessor, showStdDeviation}) =>{
