@@ -174,7 +174,7 @@ const InternetExperimentPlots = () =>{
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.meanOfMedian_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfMedian}
-          yDomain={[0, getMax(displayData, (d)=>d.meanOfMedian_ms, (d)=>d.sampleStdDevOfMedian)]}
+          yDomain={[0, getMax(displayData, (d)=>d.meanOfMedian_ms, showStdDeviation ? (d)=>d.sampleStdDevOfMedian:(d)=>0)]}
           showStdDeviation={showStdDeviation}
         />
         <LinePlotLog data={displayData}
@@ -184,7 +184,7 @@ const InternetExperimentPlots = () =>{
           xAccessor={(d)=>d.fileSize_kb}
           yAccessor={(d)=>d.meanOfPercent95_ms}
           stdDevAccessor={(d)=>d.sampleStdDevOfPercent95}
-          yDomain={[0, getMax(displayData, (d)=>d.meanOfPercent95_ms, (d)=>0)]}
+          yDomain={[0, getMax(displayData, (d)=>d.meanOfPercent95_ms, showStdDeviation? (d)=>d.sampleStdDevOfPercent95:(d)=>0)]}
           showStdDeviation={showStdDeviation}
         />
         </div>

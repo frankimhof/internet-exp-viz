@@ -30,11 +30,12 @@ const boundedHeight=height-marginTop-marginBottom;
 //const colors = ["#6497b1", "#ececa3", "#b5e550", "#607c3c", "#ffbaba", "#ff5252", "#f00", "#a70000", "#005b96"]
 //const colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6102", "#FFB000"];
 //const colors = ["#c51b7d", "#4d9221", "#2166ac", "#8c510a"]
-const colors = ["black", "red", "blue", "green"];
-const dashes = ["0", "2", "12 4 2 4", "7"];
-const strokeWidths = [1, 2.5, 1.5, 1.5];
-type PointStyleType = "rect" | "cross" | "circle" | "line"
-const pointStyles:PointStyleType[] = ["line", "cross", "rect", "circle"];
+//const colors = ["black", "red", "blue", "green"];
+const colors = ["#DC267F", "#785EF0", "#FE6100", "black"];
+const dashes = ["2 3", "12 4 2 4", "7 5", "0"];
+const strokeWidths = [2.5, 1.5, 2, 1];
+type PointStyleType = "skinCross" | "fatCross" | "circle" | "plus"
+const pointStyles:PointStyleType[] = ["fatCross", "skinCross", "circle", "plus"];
 
 
 const LinePlotLog: React.FC<Props> = ({title, data, xLabel, yLabel, xAccessor, yAccessor, yDomain, stdDevAccessor, showStdDeviation}) =>{
@@ -127,29 +128,30 @@ const CustomLine = ({dataObject, lineIndex, color, strokeWidth, dashStyle, xScal
 
   let drawPoint:(x:number, y:number)=>JSX.Element;
   switch(pointStyle){
-    case "rect":
+    case "skinCross":
       drawPoint = (x, y)=>(
         <>
-          <line x1={x-4} y1={y} x2={x} y2={y+4} strokeWidth={1.5} stroke={color} fill="transparent"/>
-          <line x1={x} y1={y+4} x2={x+4} y2={y} strokeWidth={1.5} stroke={color} fill="transparent"/>
-          <line x1={x+4} y1={y} x2={x} y2={y-4} strokeWidth={1.5} stroke={color} fill="transparent"/>
-          <line x1={x} y1={y-4} x2={x-4} y2={y} strokeWidth={1.5} stroke={color} fill="transparent"/>
+          <line x1={x+4.5} y1={y-3} x2={x-4.5} y2={y+3} strokeWidth={1.25} stroke={color} fill="transparent"/>
+          <line x1={x+4.5} y1={y+3} x2={x-4.5} y2={y-3} strokeWidth={1.25} stroke={color} fill="transparent"/>
         </>
       )
       break;
-    case "cross":
+    case "fatCross":
       drawPoint = (x, y)=>(
         <>
-          <line x1={x-4} x2={x+4} y1={y-4} y2={y+4} stroke={color} strokeWidth={2} fill={"transparent"}/>
-          <line x1={x-4} x2={x+4} y1={y+4} y2={y-4} stroke={color} strokeWidth={2} fill={"transparent"}/>
+          <line x1={x-3} x2={x+3} y1={y-3} y2={y+3} stroke={color} strokeWidth={2.5} fill={"transparent"}/>
+          <line x1={x-3} x2={x+3} y1={y+3} y2={y-3} stroke={color} strokeWidth={2.5} fill={"transparent"}/>
         </>
       )
       break;
     case "circle":
       drawPoint = (x, y)=><circle r={4} strokeWidth={1.5} stroke={color} cx={x} cy={y} fill="transparent"></circle>
       break;
-    case "line":
-      drawPoint = (x, y)=><line x1={x} x2={x} y1={y+5} y2={y-5} stroke={color} strokeWidth={1.5}/>
+    case "plus":
+      drawPoint = (x, y)=>(<>
+        <line x1={x} x2={x} y1={y+5} y2={y-5} stroke={color} strokeWidth={1}/>
+        <line x1={x-5} x2={x+5} y1={y} y2={y} stroke={color} strokeWidth={1}/>
+      </>)
       break;
     default:
       drawPoint = (x, y)=><circle r={4} fill={color} cx={x} cy={y}></circle>
