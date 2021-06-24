@@ -19,7 +19,7 @@ git clone --depth 1 --branch main https://github.com/frankimhof/internet-exp-viz
 ```
 node convert2.js
 ```
-2. Change into `internet-exp` directory and run the following commands to start the server
+2. Change into `internet-exp-viz` directory and run the following commands to start the server
 
 ```
 npm install -g serve
