@@ -4,7 +4,7 @@ It will display the results in two seperate logarithmic line plots.
 ![](images/screenshot1.png)
 
 # Prerequisites
-1. Run the benachmark scripts as described in [frankimhof/internet-exp](https://github.com/frankimhof/internet-exp) in order to obtain the results as .csv files.
+1. Run the benchmark scripts as described in [frankimhof/internet-exp](https://github.com/frankimhof/internet-exp) in order to obtain the results as .csv files.
 2. Install [node.js](https://nodejs.org/en/download/)
 
 # Installation
@@ -30,6 +30,12 @@ serve -s build
 # Development
 If you wish to further develop the page, you are welcome to do so. The plots were built using [react.js](https://reactjs.org/) and [d3.js](https://d3js.org/). Therefore, after having installed the dependencies, you can utilize the available react scripts to run and build your changes.
 
+## Install dependencies
+Assuming current working directory is `/internet-exp-viz`
+
+```
+npm install
+```
 
 ## Starting development server
 ```
