@@ -1,4 +1,4 @@
-# visualization of oqs-ssh measurments
+# visualization of internet-exp measurments
 This project is meant for visualizing the results obtained from running the benchmark scripts in [frankimhof/internet-exp](https://github.com/frankimhof/internet-exp).
 It will display the results in two seperate logarithmic line plots.
 ![](images/screenshot1.png)
