@@ -17,7 +17,7 @@ git clone --depth 1 --branch main https://github.com/frankimhof/internet-exp-viz
 # Usage
 1. Copy the .csv files (obtained from running the benchmarking scripts) into the `internet-exp/testresults` directory. Change into `internet-exp/testresults` directory and run the following command to convert .csv data into .json data.
 ```
-./node convert2.js
+node convert2.js
 ```
 2. Change into `internet-exp` directory and run the following command to start the server
 
